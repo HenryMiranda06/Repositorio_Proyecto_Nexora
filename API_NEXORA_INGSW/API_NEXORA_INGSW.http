@@ -1,0 +1,6 @@
+@API_NEXORA_INGSW_HostAddress = http://localhost:5081
+
+GET {{API_NEXORA_INGSW_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

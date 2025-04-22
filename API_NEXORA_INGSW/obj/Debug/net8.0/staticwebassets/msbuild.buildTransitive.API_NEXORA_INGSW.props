@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\API_NEXORA_INGSW.props" />
+</Project>

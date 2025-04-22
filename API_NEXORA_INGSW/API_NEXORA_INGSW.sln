@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_NEXORA_INGSW", "API_NEXORA_INGSW.csproj", "{C737A379-9D62-4A68-80D8-389D63BA6911}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C737A379-9D62-4A68-80D8-389D63BA6911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C737A379-9D62-4A68-80D8-389D63BA6911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C737A379-9D62-4A68-80D8-389D63BA6911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C737A379-9D62-4A68-80D8-389D63BA6911}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DB9B90A-81EC-4FA8-A7EA-0F8EED64571F}
+	EndGlobalSection
+EndGlobal
