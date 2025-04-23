@@ -46,13 +46,31 @@ namespace API_NEXORA_INGSW.Controllers
             return mensaje;
         }
 
-        //Muestra todos los idiomas
-        [HttpGet("ListadoIdiomas")]
-        public async Task<List<Idiomas>> ListadoIdiomas()
-        {
-            var lista = await _context.Idiomas.ToListAsync();
 
-            return lista;
+        [HttpDelete("EliminarPerfil/{idEmpleado}")]
+        public async Task<string> EliminarPerfil(int idEmpleado)
+        {
+            string mensaje = "Error inesperado";
+
+            try
+            {
+                var perfil = await _context.PerfilProfesional.FirstOrDefaultAsync(
+                    t => t.ID_Empleado == idEmpleado);
+
+                if (perfil != null)
+                {
+                    _context.PerfilProfesional.Remove(perfil);
+
+                    await _context.SaveChangesAsync();
+
+                    mensaje = "Error al eliminar el perfil profesional";
+                }
+            }
+            catch (Exception ex)
+            {
+                mensaje = "Error: " + ex.InnerException.Message;
+            }
+            return mensaje;
         }
     }
 }
