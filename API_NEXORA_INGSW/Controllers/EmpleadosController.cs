@@ -8,9 +8,24 @@ namespace API_NEXORA_INGSW.Controllers
     {
         private readonly DbContextNexora _context;
 
+        private CuentasController _cuentasController;
+
+        private RolesController _rolesController;
+
+        private PerfilProfesionalController _perfilProfesionalController;
+
+        private IdiomasController _idiomasController;
+
+        private readonly ConcursosController _concursosController;
+
         public EmpleadosController(DbContextNexora context)
         {
             _context = context;
+            _cuentasController = new CuentasController(_context);
+            _rolesController = new RolesController(_context);
+            _perfilProfesionalController = new PerfilProfesionalController(_context);
+            _idiomasController = new IdiomasController(_context);
+            _concursosController = new ConcursosController(_context);
         }
 
         [HttpPut("Agregar")]
@@ -77,49 +92,61 @@ namespace API_NEXORA_INGSW.Controllers
         }
 
         //Método que elimina a un empleado en base a su numero de cedula
-        [HttpDelete("Eliminar/{cedula}")]
-        public async Task<string> Eliminar(int cedula)
+        [HttpDelete("Eliminar/{cedula, id}")]
+        public async Task<string> Eliminar(int cedula, int id)
         {
-            string mensaje = "No se eliminó el empleado.";
+            string mensaje = "Error inesperado";
 
             using (var transaction = await _context.Database.BeginTransactionAsync())
             {
-                /*try
+                try
                 {
-                    var cliente = await _context.Clientes.FirstOrDefaultAsync(x => x.Cedula == cedula);
-                    if (cliente != null)
+                    //busca al empleado en la BD
+                    var empleado = await _context.Empleados.FirstOrDefaultAsync(x => x.Cedula == cedula
+                    && x.ID_Empleado == id);
+
+                    //si existe
+                    if (empleado != null)
                     {
-                        //todas las reservaciones con ese cliente
-                        var reservaciones = await _context.Reservaciones
-                            .Where(r => r.CedulaCliente == cedula)
-                            .ToListAsync();
+                        //Elimina los datos asociados al empleado (cuentas, solicitudes, roles, perfil, idiomas, postulaciones)
+                        var cuentas = await _context.Cuentas.Where(r => r.ID_Empleado == id).ToListAsync();
 
                         //devuelve true si trae algun elemento al menos
-                        if (reservaciones.Any())
+                        if (cuentas.Any())
                         {
                             //elimina todos los que trajo
-                            _context.Reservaciones.RemoveRange(reservaciones);
+                            _context.Cuentas.RemoveRange(cuentas);
 
-                            // Guardar cambios después de eliminar las reservaciones
+                            // Guardar cambios después de eliminar las cuentas
                             await _context.SaveChangesAsync();
                         }
 
-                        //elimina el cliente
-                        _context.Clientes.Remove(cliente);
+                        await _cuentasController.EliminarSolicitudID(id);  //eliminar solicitudes cuenta del empleado
 
-                        // Guardar cambios después de eliminar el cliente
+                        await _rolesController.EliminarRolesEmpleado(id); //eliminar roles del empleado
+
+                        await _idiomasController.EliminarIdiomasEmpleado(id); //eliminar Idiomas del empleado
+
+                        await _concursosController.EliminarParticipante(id); //elimina al empleado de todos los concursos
+
+                        await _perfilProfesionalController.EliminarPerfil(id); //elimina el perfil profesional del empleado
+
+                        //elimina el empleado
+                        _context.Empleados.Remove(empleado);
+
+                        // Guardar cambios después de eliminar el empleado
                         await _context.SaveChangesAsync();
 
                         await transaction.CommitAsync();
 
-                        mensaje = "Cliente " + cliente.NombreCompleto + " y sus reservaciones eliminados correctamente.";
+                        mensaje = "Empleado: " + empleado.NombreEmpleado + " elimnado exitosamente";
                     }
                 }
                 catch (Exception ex)
                 {
                     await transaction.RollbackAsync();
-                    mensaje = "No se eliminó el cliente. Error: " + (ex.InnerException?.Message ?? ex.Message);
-                }*/
+                    mensaje = "No se eliminó el empleado. Error: " + (ex.InnerException?.Message);
+                }
             }
 
             return mensaje;

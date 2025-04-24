@@ -15,19 +15,32 @@ namespace API_NEXORA_INGSW.Controllers
 
         //Métodos
         [HttpPut("CrearConcurso")]
-        public async Task<string> CrearConcurso(Concursos concurso)
+        public async Task<string> CrearConcurso(Concursos concurso, RequisitosConcurso requisitos)
         {
             string mensaje = "Error inesperado";
-            try
-            {
-                _context.Concursos.Add(concurso);
 
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
+            using (var transaccion = await _context.Database.BeginTransactionAsync())
             {
-                mensaje = "Error " + ex.InnerException.Message;
+                try
+                {
+                    _context.Concursos.Add(concurso);
+
+                    await _context.SaveChangesAsync();
+
+                    ////////////////////////////////////////
+
+                    _context.RequisitosConcurso.Add(requisitos);
+
+                    await _context.SaveChangesAsync();
+
+                    await transaccion.CommitAsync();
+                }
+                catch (Exception)
+                {
+                    await transaccion.RollbackAsync();
+                }
             }
+
             return mensaje;
         }
 
@@ -59,6 +72,34 @@ namespace API_NEXORA_INGSW.Controllers
             }
 
             return mensaje;
+        }
+
+        //Elimina un empleado de todos los concursos
+        [HttpDelete("EliminarParticipante/{idEmpleado}")]
+        public async Task EliminarParticipante(int idEmpleado)
+        {
+            try
+            {
+                var perfil = await _context.PerfilProfesional.FirstOrDefaultAsync(
+                    p => p.ID_Empleado == idEmpleado);
+
+                if (perfil != null)
+                {
+                    var postulante = await _context.Postulaciones.Where(
+                    i => i.ID_Perfil == perfil.ID_Perfil).ToListAsync();
+
+                    if (postulante != null)
+                    {
+                        _context.Postulaciones.RemoveRange(postulante);
+
+                        await _context.SaveChangesAsync();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
     }
