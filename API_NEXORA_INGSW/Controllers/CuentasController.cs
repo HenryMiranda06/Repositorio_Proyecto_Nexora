@@ -89,5 +89,26 @@ namespace API_NEXORA_INGSW.Controllers
             }
             return mensaje;
         }
+
+        //Eliminar soli pero buscando por id empleado
+        [HttpDelete("EliminarSoliID/{id}")]
+        public async Task EliminarSolicitudID(int id)
+        {
+            try
+            {
+                var cuentaEliminar = await _context.Solicitudes.FirstOrDefaultAsync(
+                    t => t.ID_Empleado == id);
+
+                if (cuentaEliminar != null)
+                {
+                    _context.Solicitudes.Remove(cuentaEliminar);
+
+                    await _context.SaveChangesAsync();
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
     }
 }
