@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Sistema_RRHH_Nexora.props" />
+</Project>
