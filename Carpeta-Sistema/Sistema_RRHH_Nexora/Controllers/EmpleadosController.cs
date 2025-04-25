@@ -44,9 +44,27 @@ namespace Sistema_RRHH_Nexora.Controllers
         // POST: EmpleadosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create() 
+        public async Task<IActionResult> Create([Bind] Empleados empleado)
         {
+            //primero traemos de la vista
+            if (await BuscarEmpleado(empleado.Cedula)) //si el empleado ya existe
+            {
+                TempData["Mensaje"] = "El empleado que desea ingresar ya existe en el sistema.";
+                return RedirectToAction("Create", "Empleados");
+            }
+            else //si no existe, guardar en la BD
+            {
+                var agregarEmpleado = await client.PutAsJsonAsync<Empleados>("/api/Empleados/Agregar", empleado);
 
+                if (agregarEmpleado.IsSuccessStatusCode) //si se agregó a la BD con éxito
+                {
+                    return RedirectToAction("Index"); //envia a la lista de Empleados
+                }
+                else
+                {
+                    return View(empleado);
+                }
+            }
         }
 
         // GET: EmpleadosController/Edit/5
@@ -89,6 +107,29 @@ namespace Sistema_RRHH_Nexora.Controllers
             {
                 return View();
             }
+        }
+
+        //Metodo buscar Empleado de la API
+        public async Task<bool> BuscarEmpleado(int cedula)
+        {
+            Empleados empleado = new Empleados();
+            bool empleadoExiste = false;
+
+            var response = await client.GetAsync($"/api/Empleados/{cedula}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = response.Content.ReadAsStringAsync().Result;
+
+                empleado = JsonConvert.DeserializeObject<Empleados>(json);
+
+                if (empleado != null)
+                {
+                    empleadoExiste = true;
+                }
+            }
+
+            return empleadoExiste;
         }
     }
 }

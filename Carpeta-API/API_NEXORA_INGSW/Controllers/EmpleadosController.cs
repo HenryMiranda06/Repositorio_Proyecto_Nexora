@@ -67,7 +67,7 @@ namespace API_NEXORA_INGSW.Controllers
         [HttpGet("Buscar/{cedula}")]
         public async Task<Empleados> Buscar(int cedula)
         {
-            //se busca el cliente
+            //se busca el empleado
             var temp = await _context.Empleados.FirstOrDefaultAsync(x => x.Cedula == cedula);
 
             return temp;
