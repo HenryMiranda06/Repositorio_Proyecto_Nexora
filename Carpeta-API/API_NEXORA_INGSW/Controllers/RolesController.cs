@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API_NEXORA_INGSW.Controllers
 {
+    [Route("api/Roles")]
+    [ApiController]
     public class RolesController : Controller
     {
         private readonly DbContextNexora _context;

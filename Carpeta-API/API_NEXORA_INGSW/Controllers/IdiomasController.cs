@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API_NEXORA_INGSW.Controllers
 {
+    [Route("api/Idiomas")]
+    [ApiController]
     public class IdiomasController : Controller
     {
         private readonly DbContextNexora _context;

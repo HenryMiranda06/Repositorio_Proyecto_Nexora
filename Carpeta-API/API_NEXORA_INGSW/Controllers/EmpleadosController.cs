@@ -4,6 +4,8 @@ using API_NEXORA_INGSW.Models;
 
 namespace API_NEXORA_INGSW.Controllers
 {
+    [Route("api/Empleados")]
+    [ApiController]
     public class EmpleadosController : Controller
     {
         private readonly DbContextNexora _context;

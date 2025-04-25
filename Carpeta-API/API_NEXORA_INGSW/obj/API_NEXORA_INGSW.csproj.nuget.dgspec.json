@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj": {}
+    "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj": {
+    "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj",
+        "projectUniqueName": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj",
         "projectName": "API_NEXORA_INGSW",
-        "projectPath": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj",
+        "projectPath": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\API_NEXORA_INGSW.csproj",
         "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\API_NEXORA_INGSW\\obj\\",
+        "outputPath": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -2,8 +2,36 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include=".vs\Sistema_RRHH_Nexora\v17\DocumentLayout.backup.json" />
+    <Content Include=".vs\Sistema_RRHH_Nexora\v17\DocumentLayout.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include=".vs\sd\" />
+    <Folder Include="bin\Debug\net8.0\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".vs\ProjectEvaluation\sistema_rrhh_nexora.metadata.v9.bin" />
+    <None Include=".vs\ProjectEvaluation\sistema_rrhh_nexora.projects.v9.bin" />
+    <None Include=".vs\ProjectEvaluation\sistema_rrhh_nexora.strings.v9.bin" />
+    <None Include=".vs\Sistema_RRHH_Nexora\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\Sistema_RRHH_Nexora\FileContentIndex\6fbdd512-5467-40c7-93c7-6596c8013b37.vsidx" />
+    <None Include=".vs\Sistema_RRHH_Nexora\v17\.futdcache.v2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
 
 </Project>

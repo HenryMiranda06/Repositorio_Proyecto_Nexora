@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API_NEXORA_INGSW.Controllers
 {
+    [Route("api/Cuentas")]
+    [ApiController]
     public class CuentasController : Controller
     {
         private readonly DbContextNexora _context;
