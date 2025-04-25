@@ -1,0 +1,14 @@
+﻿namespace Sistema_RRHH_Nexora.Models
+{
+    public class ConsumoAPI
+    {
+        public HttpClient Iniciar()
+        {
+            var client = new HttpClient();
+
+            client.BaseAddress = new Uri("http://localhost:");
+
+            return client;
+        }
+    }
+}

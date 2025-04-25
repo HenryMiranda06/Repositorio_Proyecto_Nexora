@@ -4,6 +4,8 @@ using API_NEXORA_INGSW.Models;
 
 namespace API_NEXORA_INGSW.Controllers
 {
+    [Route("api/Concursos")]
+    [ApiController]
     public class ConcursosController : Controller
     {
         private readonly DbContextNexora _context;
@@ -15,7 +17,7 @@ namespace API_NEXORA_INGSW.Controllers
 
         //Métodos
         [HttpPut("CrearConcurso")]
-        public async Task<string> CrearConcurso(Concursos concurso, RequisitosConcurso requisitos)
+        public async Task<string> CrearConcurso(DTO_ConcursoRequisitos concurso)
         {
             string mensaje = "Error inesperado";
 
@@ -23,13 +25,13 @@ namespace API_NEXORA_INGSW.Controllers
             {
                 try
                 {
-                    _context.Concursos.Add(concurso);
+                    _context.Concursos.Add(concurso.concurso);
 
                     await _context.SaveChangesAsync();
 
                     ////////////////////////////////////////
 
-                    _context.RequisitosConcurso.Add(requisitos);
+                    _context.RequisitosConcurso.Add(concurso.requisitos);
 
                     await _context.SaveChangesAsync();
 
@@ -43,6 +45,7 @@ namespace API_NEXORA_INGSW.Controllers
 
             return mensaje;
         }
+
 
         [HttpDelete("EliminarConcurso")]
         public async Task<string> EliminarConcurso(Concursos concurso)

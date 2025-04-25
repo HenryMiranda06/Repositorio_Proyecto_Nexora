@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_NEXORA_INGSW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb2005dcf779b87b7d4a9454cb9fd5eeb80a5ac8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ce6bc8530f38ed373e567a1a9c3063606269bef")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_NEXORA_INGSW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_NEXORA_INGSW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

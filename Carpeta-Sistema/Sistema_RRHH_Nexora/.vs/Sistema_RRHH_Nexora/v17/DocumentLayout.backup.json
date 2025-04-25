@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\consumoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\consumoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +47,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsumoAPI.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\ConsumoAPI.cs",
+              "RelativeDocumentMoniker": "Models\\ConsumoAPI.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\ConsumoAPI.cs",
+              "RelativeToolTip": "Models\\ConsumoAPI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:35:49.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpleadosController.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\EmpleadosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpleadosController.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\EmpleadosController.cs",
+              "RelativeToolTip": "Controllers\\EmpleadosController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowC4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:34:22.624Z",
+              "EditorCaption": ""
             }
           ]
         },

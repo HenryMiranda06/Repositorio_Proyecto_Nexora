@@ -5,6 +5,8 @@ using System.Linq.Expressions;
 
 namespace API_NEXORA_INGSW.Controllers
 {
+    [Route("api/PerfilProf")]
+    [ApiController]
     public class PerfilProfesionalController : Controller
     {
         private readonly DbContextNexora _context;
@@ -16,7 +18,7 @@ namespace API_NEXORA_INGSW.Controllers
 
         //Metodos 
         [HttpPut("CrearPerfil")]
-        public async Task<string> CrearPerfil(PerfilProfesional datosPerfil, IdiomasEmpleado idiomas)
+        public async Task<string> CrearPerfil(DTO_PerfilProfesional datosPerfil)
         {
             string mensaje = "Error inesperado";
 
@@ -25,11 +27,11 @@ namespace API_NEXORA_INGSW.Controllers
                 try
                 {
                     //llenar tabla perfil profesional
-                    _context.PerfilProfesional.Add(datosPerfil);
+                    _context.PerfilProfesional.Add(datosPerfil.perfil);
 
                     await _context.SaveChangesAsync();
 
-                    _context.IdiomasEmpleado.Add(idiomas);
+                    _context.IdiomasEmpleado.Add(datosPerfil.idiomas);
 
                     await _context.SaveChangesAsync();
 

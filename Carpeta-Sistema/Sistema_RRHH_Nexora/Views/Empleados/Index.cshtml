@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Sistema_RRHH_Nexora.Models.Empleados>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pais)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pais)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID_Empleado">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID_Empleado">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID_Empleado">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
