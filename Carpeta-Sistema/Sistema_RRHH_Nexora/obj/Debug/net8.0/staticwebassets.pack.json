@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Fondo.png",
+      "PackagePath": "staticwebassets\\images\\Fondo.png"
+    },
+    {
+      "Id": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Logo5.png",
+      "PackagePath": "staticwebassets\\images\\Logo5.png"
+    },
+    {
+      "Id": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Nexora-fondo.jpg",
+      "PackagePath": "staticwebassets\\images\\Nexora-fondo.jpg"
+    },
+    {
       "Id": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

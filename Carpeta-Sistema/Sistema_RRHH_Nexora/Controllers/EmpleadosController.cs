@@ -35,10 +35,12 @@ namespace Sistema_RRHH_Nexora.Controllers
             return View(lista);
         }
 
+        //Metodos get y post para crear el empleado
         [HttpGet]
         public ActionResult Create()
         {
             return View();
+
         }
 
         // POST: EmpleadosController/Create
@@ -64,48 +66,6 @@ namespace Sistema_RRHH_Nexora.Controllers
                 {
                     return View(empleado);
                 }
-            }
-        }
-
-        // GET: EmpleadosController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: EmpleadosController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: EmpleadosController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: EmpleadosController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
             }
         }
 

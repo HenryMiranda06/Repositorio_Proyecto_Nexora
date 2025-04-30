@@ -3,12 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\views\\login\\solicitarcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\login\\solicitarcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\consumoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\consumoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\sistema_rrhh_nexora.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:sistema_rrhh_nexora.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,29 +110,214 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConsumoAPI.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\ConsumoAPI.cs",
-              "RelativeDocumentMoniker": "Models\\ConsumoAPI.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\ConsumoAPI.cs",
-              "RelativeToolTip": "Models\\ConsumoAPI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Email.cs",
+              "RelativeDocumentMoniker": "Models\\Email.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Email.cs",
+              "RelativeToolTip": "Models\\Email.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T23:35:49.275Z",
+              "WhenOpened": "2025-04-30T16:44:42.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T22:45:44.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SolicitarCuenta.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\SolicitarCuenta.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\SolicitarCuenta.cshtml",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\SolicitarCuenta.cshtml",
+              "RelativeToolTip": "Views\\Login\\SolicitarCuenta.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T21:00:35.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cuentas.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Cuentas.cs",
+              "RelativeDocumentMoniker": "Models\\Cuentas.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Cuentas.cs",
+              "RelativeToolTip": "Models\\Cuentas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T23:18:41.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SolicitudesCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\SolicitudesCuenta.cs",
+              "RelativeDocumentMoniker": "Models\\SolicitudesCuenta.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\SolicitudesCuenta.cs",
+              "RelativeToolTip": "Models\\SolicitudesCuenta.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T02:42:56.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:06:44.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:18:36.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T19:10:28.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConsumoAPI.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\ConsumoAPI.cs",
+              "RelativeDocumentMoniker": "Models\\ConsumoAPI.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\ConsumoAPI.cs",
+              "RelativeToolTip": "Models\\ConsumoAPI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:35:49.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwCYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T23:22:17.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "EmpleadosController.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\EmpleadosController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmpleadosController.cs",
               "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\EmpleadosController.cs",
               "RelativeToolTip": "Controllers\\EmpleadosController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAowEcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T23:34:22.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T23:34:22.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T00:43:36.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T02:16:05.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-28T21:06:44.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T02:41:04.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Sistema_RRHH_Nexora",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Sistema_RRHH_Nexora.csproj",
+              "RelativeDocumentMoniker": "Sistema_RRHH_Nexora.csproj",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Sistema_RRHH_Nexora.csproj",
+              "RelativeToolTip": "Sistema_RRHH_Nexora.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-26T23:24:18.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-26T23:19:46.219Z"
             }
           ]
         },

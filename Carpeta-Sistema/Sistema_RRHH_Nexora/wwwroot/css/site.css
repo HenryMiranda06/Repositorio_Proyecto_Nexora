@@ -1,22 +1,101 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/Nexora-fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.primerDIV {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.5); /* Fondo gris semi-transparente */
+    border-radius: 15px;
+    overflow: hidden; /* Para que los bordes redondeados se apliquen bien */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Un poco de sombra */
+}
+
+.lado-izquierdo, .lado-derecho {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-izquierdo {
+    width: 300px;
+    background: transparent; /* Sigue viendo el gris */
+}
+
+.lado-derecho {
+    width: 300px;
+    background: white; /* Div blanco encima del gris */
+    border-radius: 0 15px 15px 0; /* Redondeado solo en la esquina derecha */
+}
+
+.input-estilo {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+
+.boton-estilo, .boton-solicitud {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .boton-estilo:hover, .boton-solicitud:hover {
+        background: linear-gradient(to right, #0072ff, #00c6ff);
+    }

@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/css/site.c2tiyv64ts.css">
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/css/site.b6ru4ewht2.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c2tiyv64ts"},{"Name":"integrity","Value":"sha256-pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"362"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 21:47:09 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b6ru4ewht2"},{"Name":"integrity","Value":"sha256-E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2201"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 21:06:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"362"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 21:47:09 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2201"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 21:06:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -23,6 +23,42 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 21:47:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/images/Fondo.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Fondo.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2069803"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 23:10:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/images/Fondo.wlpqlvsyd5.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Fondo.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wlpqlvsyd5"},{"Name":"integrity","Value":"sha256-JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/images/Fondo.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2069803"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 23:10:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/images/Logo5.dovwgzo1zd.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Logo5.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dovwgzo1zd"},{"Name":"integrity","Value":"sha256-XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/images/Logo5.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"253563"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 23:11:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/images/Logo5.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Logo5.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"253563"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 23:11:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/images/Nexora-fondo.3z5x4cs1xb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Nexora-fondo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3z5x4cs1xb"},{"Name":"integrity","Value":"sha256-gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/images/Nexora-fondo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"153278"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 20:05:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/images/Nexora-fondo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Nexora-fondo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"153278"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 20:05:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
@@ -724,13 +760,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Sistema_RRHH_Nexora.remii0z7db.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-84PW1KYYTVBr0raxcSo7oyet70hWBfos1iz1\u002BStsugo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002284PW1KYYTVBr0raxcSo7oyet70hWBfos1iz1\u002BStsugo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 23:06:45 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002284PW1KYYTVBr0raxcSo7oyet70hWBfos1iz1\u002BStsugo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 23:23:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/Sistema_RRHH_Nexora.remii0z7db.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Sistema_RRHH_Nexora.remii0z7db.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"remii0z7db"},{"Name":"integrity","Value":"sha256-84PW1KYYTVBr0raxcSo7oyet70hWBfos1iz1\u002BStsugo="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/Sistema_RRHH_Nexora.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002284PW1KYYTVBr0raxcSo7oyet70hWBfos1iz1\u002BStsugo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 23:06:45 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1137"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002284PW1KYYTVBr0raxcSo7oyet70hWBfos1iz1\u002BStsugo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 26 Apr 2025 23:23:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>
