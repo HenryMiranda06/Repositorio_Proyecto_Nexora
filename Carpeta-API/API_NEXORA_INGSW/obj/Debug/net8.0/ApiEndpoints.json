@@ -113,17 +113,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "API_NEXORA_INGSW.Controllers.CuentasController",
@@ -174,22 +164,22 @@
     ]
   },
   {
-    "ContainingType": "API_NEXORA_INGSW.Controllers.EmpleadosController",
-    "Method": "Agregar",
-    "RelativePath": "api/Empleados/Agregar",
+    "ContainingType": "API_NEXORA_INGSW.Controllers.CuentasController",
+    "Method": "VerificarCredenciales",
+    "RelativePath": "api/Cuentas/VerificarCuenta",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "empleado",
-        "Type": "API_NEXORA_INGSW.Models.Empleados",
+        "Name": "credenciales",
+        "Type": "API_NEXORA_INGSW.Models.Cuentas",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "System.Char",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -198,6 +188,85 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.CuentasController",
+    "Method": "VerificarSolicitud",
+    "RelativePath": "api/Cuentas/VerificarSolicitud",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitud",
+        "Type": "API_NEXORA_INGSW.Models.SolicitudesCuenta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.EmpleadosController",
+    "Method": "EliminarDatosEmpleado",
+    "RelativePath": "api/Empleados",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.EmpleadosController",
+    "Method": "GenerarCodigo",
+    "RelativePath": "api/Empleados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.EmpleadosController",
+    "Method": "Agregar",
+    "RelativePath": "api/Empleados/Agregar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleado",
+        "Type": "API_NEXORA_INGSW.Models.Empleados",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "API_NEXORA_INGSW.Controllers.EmpleadosController",
@@ -213,17 +282,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "API_NEXORA_INGSW.Models.Empleados",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "API_NEXORA_INGSW.Controllers.EmpleadosController",
@@ -352,20 +411,20 @@
   {
     "ContainingType": "API_NEXORA_INGSW.Controllers.PerfilProfesionalController",
     "Method": "CrearPerfil",
-    "RelativePath": "api/PerfilProf/CrearPerfil",
+    "RelativePath": "api/PerfilProf",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "datosPerfil",
-        "Type": "API_NEXORA_INGSW.Models.DTO_PerfilProfesional",
-        "IsRequired": true
+        "Name": "idEmpleado",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -422,6 +481,130 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.RolesController",
+    "Method": "listadoRoles",
+    "RelativePath": "api/Roles/Listado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[API_NEXORA_INGSW.Models.Roles, API_NEXORA_INGSW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.RolesController",
+    "Method": "VerificarRolRRHH",
+    "RelativePath": "api/Roles/RolesEmpleado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuenta",
+        "Type": "API_NEXORA_INGSW.Models.Cuentas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.SolicitudesController",
+    "Method": "AceptarSolicitud",
+    "RelativePath": "api/Solicitudes/AceptarSolicitud/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.SolicitudesController",
+    "Method": "BuscarSolicitud",
+    "RelativePath": "api/Solicitudes/BuscarSolicitud/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_NEXORA_INGSW.Models.SolicitudesCuenta",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.SolicitudesController",
+    "Method": "Listado",
+    "RelativePath": "api/Solicitudes/Listado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[API_NEXORA_INGSW.Models.SolicitudesCuenta, API_NEXORA_INGSW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_NEXORA_INGSW.Controllers.SolicitudesController",
+    "Method": "RechazarSolicitud",
+    "RelativePath": "api/Solicitudes/RechazarSolicitud/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "API_NEXORA_INGSW.Controllers.WeatherForecastController",

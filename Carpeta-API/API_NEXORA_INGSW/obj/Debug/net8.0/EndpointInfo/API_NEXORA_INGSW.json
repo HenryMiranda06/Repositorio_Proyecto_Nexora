@@ -172,6 +172,37 @@
         }
       }
     },
+    "/api/Cuentas/VerificarSolicitud": {
+      "put": {
+        "tags": [
+          "Cuentas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudesCuenta"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudesCuenta"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolicitudesCuenta"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Cuentas/CrearCuenta": {
       "put": {
         "tags": [
@@ -238,24 +269,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -283,26 +297,26 @@
         }
       }
     },
-    "/api/Empleados/Agregar": {
+    "/api/Cuentas/VerificarCuenta": {
       "put": {
         "tags": [
-          "Empleados"
+          "Cuentas"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleados"
+                "$ref": "#/components/schemas/Cuentas"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleados"
+                "$ref": "#/components/schemas/Cuentas"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Empleados"
+                "$ref": "#/components/schemas/Cuentas"
               }
             }
           }
@@ -327,6 +341,48 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/Empleados/Agregar/{id}": {
+      "put": {
+        "tags": [
+          "Empleados"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -387,24 +443,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Empleados"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Empleados"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Empleados"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -512,6 +551,58 @@
         }
       }
     },
+    "/api/Empleados": {
+      "delete": {
+        "tags": [
+          "Empleados"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Empleados"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Idiomas/EliminarIdiomasEmpleado/{idEmpleado}": {
       "delete": {
         "tags": [
@@ -573,47 +664,38 @@
         }
       }
     },
-    "/api/PerfilProf/CrearPerfil": {
+    "/api/PerfilProf": {
       "put": {
         "tags": [
           "PerfilProfesional"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DTO_PerfilProfesional"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DTO_PerfilProfesional"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DTO_PerfilProfesional"
-              }
+        "parameters": [
+          {
+            "name": "idEmpleado",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "string"
+                  "type": "boolean"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "string"
+                  "type": "boolean"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "string"
+                  "type": "boolean"
                 }
               }
             }
@@ -661,6 +743,44 @@
         }
       }
     },
+    "/api/Roles/Listado": {
+      "get": {
+        "tags": [
+          "Roles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Roles"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Roles"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Roles"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Roles/EliminarTodosRoles": {
       "delete": {
         "tags": [
@@ -670,6 +790,178 @@
           {
             "name": "idEmpleado",
             "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Roles/RolesEmpleado": {
+      "put": {
+        "tags": [
+          "Roles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cuentas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cuentas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cuentas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Solicitudes/Listado": {
+      "get": {
+        "tags": [
+          "Solicitudes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudesCuenta"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudesCuenta"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolicitudesCuenta"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Solicitudes/BuscarSolicitud/{id}": {
+      "get": {
+        "tags": [
+          "Solicitudes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudesCuenta"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudesCuenta"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudesCuenta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Solicitudes/AceptarSolicitud/{id}": {
+      "put": {
+        "tags": [
+          "Solicitudes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Solicitudes/RechazarSolicitud/{id}": {
+      "delete": {
+        "tags": [
+          "Solicitudes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -758,6 +1050,24 @@
         },
         "additionalProperties": false
       },
+      "Cuentas": {
+        "type": "object",
+        "properties": {
+          "correo": {
+            "type": "string",
+            "nullable": true
+          },
+          "contraseña": {
+            "type": "string",
+            "nullable": true
+          },
+          "iD_Empleado": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "DTO_ConcursoRequisitos": {
         "type": "object",
         "properties": {
@@ -766,18 +1076,6 @@
           },
           "requisitos": {
             "$ref": "#/components/schemas/RequisitosConcurso"
-          }
-        },
-        "additionalProperties": false
-      },
-      "DTO_PerfilProfesional": {
-        "type": "object",
-        "properties": {
-          "perfil": {
-            "$ref": "#/components/schemas/PerfilProfesional"
-          },
-          "idiomas": {
-            "$ref": "#/components/schemas/IdiomasEmpleado"
           }
         },
         "additionalProperties": false
@@ -818,48 +1116,6 @@
         },
         "additionalProperties": false
       },
-      "IdiomasEmpleado": {
-        "type": "object",
-        "properties": {
-          "iD_Perfil": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "cod_Idioma": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "PerfilProfesional": {
-        "type": "object",
-        "properties": {
-          "iD_Perfil": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "titulos": {
-            "type": "string",
-            "format": "byte",
-            "nullable": true
-          },
-          "certificaciones": {
-            "type": "string",
-            "format": "byte",
-            "nullable": true
-          },
-          "historialLaboral": {
-            "type": "string",
-            "nullable": true
-          },
-          "iD_Empleado": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "RequisitosConcurso": {
         "type": "object",
         "properties": {
@@ -876,6 +1132,20 @@
             "format": "int32"
           },
           "valor": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Roles": {
+        "type": "object",
+        "properties": {
+          "iD_Rol": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreRol": {
             "type": "string",
             "nullable": true
           }

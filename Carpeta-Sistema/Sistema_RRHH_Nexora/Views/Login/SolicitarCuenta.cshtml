@@ -1,0 +1,55 @@
+﻿@model Sistema_RRHH_Nexora.Models.SolicitudesCuenta
+
+@{
+	ViewData["Title"] = "SolicitarCuenta";
+}
+
+<div class="primerDIV">
+	<div class="contenedor">
+		<div class="lado-derecho">
+			<!-- Solo usamos lado derecho -->
+			<h2>Solicitar Cuenta</h2>
+
+			@if (TempData["Mensaje"] != null)
+			{
+				<div class="alert alert-danger" role="alert">
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+					<strong>@TempData["Mensaje"]</strong>
+				</div>
+			}
+
+			@if (TempData["Exito"] != null)
+			{
+				<div class="alert alert-success" role="alert">
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+					<strong>@TempData["Exito"]</strong>
+				</div>
+			}
+
+			<form asp-action="SolicitarCuenta" style="width: 100%;">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+				<div class="form-group">
+					<label asp-for="ID_Empleado" class="control-label"></label>
+					<input asp-for="ID_Empleado" class="form-control input-estilo" />
+					<span asp-validation-for="ID_Empleado" class="text-danger"></span>
+				</div>
+
+				<div class="form-group">
+					<label asp-for="CorreoCuenta" class="control-label"></label>
+					<input asp-for="CorreoCuenta" class="form-control input-estilo" />
+					<span asp-validation-for="CorreoCuenta" class="text-danger"></span>
+				</div>
+
+				<div class="form-group" style="text-align: center;">
+					<input type="submit" value="Enviar Solicitud" class="boton-estilo" />
+				</div>
+			</form>
+
+			<div style="margin-top: 10px;">
+				<a asp-controller="Home" asp-action="Index" style="color: #0072ff; text-decoration: none;">Atrás</a>
+			</div>
+
+		</div>
+	</div>
+</div>

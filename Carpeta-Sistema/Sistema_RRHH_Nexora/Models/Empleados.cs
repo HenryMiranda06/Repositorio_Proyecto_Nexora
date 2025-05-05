@@ -6,12 +6,16 @@ namespace Sistema_RRHH_Nexora.Models
     {
         //Atributos
         [Key]
-        public int ID_Empleado { get; set; }
+        public int? ID_Empleado { get; set; }
 
+        [Display(Name = "Nombre del empleado")]
+        [Required]
         public string NombreEmpleado { get; set; }
 
-        public int Cedula { get; set; } 
+        [Required]
+        public int Cedula { get; set; }
 
+        [Required]
         public string Pais { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace API_NEXORA_INGSW.Models
         public DbSet<Roles> Roles { get; set; }
         public DbSet<RolesEmpleado> RolesEmpleado { get; set; }
 
-        public DbSet<SolicitudesCuenta> Solicitudes { get; set; }
+        public DbSet<SolicitudesCuenta> SolicitudesCuenta { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Sistema_RRHH_Nexora.Models.SolicitudesCuenta>
+
+@{
+	ViewData["Title"] = "Solicitudes";
+}
+
+<div class="tabla-contenedor">
+	<table class="tabla-nexora">
+		<thead>
+			<tr>
+				<th>@Html.DisplayNameFor(model => model.NoSolicitud)</th>
+				<th>@Html.DisplayNameFor(model => model.ID_Empleado)</th>
+				<th>@Html.DisplayNameFor(model => model.CorreoCuenta)</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@Html.DisplayFor(modelItem => item.NoSolicitud)</td>
+					<td>@Html.DisplayFor(modelItem => item.ID_Empleado)</td>
+					<td>@Html.DisplayFor(modelItem => item.CorreoCuenta)</td>
+					@*Botones*@
+					<td>
+						<form asp-action="Solicitudes" asp-route-id="@item.NoSolicitud" method="post">
+							<button type="submit" name="accion" value="aceptar" class="btn-aceptar">Aceptar</button>
+							<button type="submit" name="accion" value="rechazar" class="btn-rechazar">Rechazar</button>
+						</form>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
