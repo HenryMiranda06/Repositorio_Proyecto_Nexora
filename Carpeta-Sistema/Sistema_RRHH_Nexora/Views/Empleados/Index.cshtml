@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Sistema_RRHH_Nexora.Models.Empleados>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<div class="tabla-contenedor">
+	<table class="tabla-nexora">
+		<thead>
+			<tr>
+				<th>@Html.DisplayNameFor(model => model.NombreEmpleado)</th>
+				<th>@Html.DisplayNameFor(model => model.Cedula)</th>
+				<th>@Html.DisplayNameFor(model => model.Pais)</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@Html.DisplayFor(modelItem => item.NombreEmpleado)</td>
+					<td>@Html.DisplayFor(modelItem => item.Cedula)</td>
+					<td>@Html.DisplayFor(modelItem => item.Pais)</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
