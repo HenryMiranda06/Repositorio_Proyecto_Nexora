@@ -1,0 +1,60 @@
+﻿@model Sistema_RRHH_Nexora.Models.Empleados
+@{
+	ViewData["Title"] = "Create";
+}
+
+<div class="form-wrapper">
+	<div class="form-nexora">
+		<h2>Nuevo Empleado</h2>
+
+		@if (TempData["Mensaje"] != null)
+		{
+			<div class="alert alert-danger" role="alert">
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+				<strong>@TempData["Mensaje"]</strong>
+			</div>
+		}
+		<hr />
+		<form asp-action="Create">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+			<div class="form-group">
+				<label asp-for="NombreEmpleado"></label>
+				<input asp-for="NombreEmpleado" class="form-control" />
+				<span asp-validation-for="NombreEmpleado" class="text-danger"></span>
+			</div>
+
+			<div class="form-group">
+				<label asp-for="Cedula"></label>
+				<input asp-for="Cedula" class="form-control" />
+				<span asp-validation-for="Cedula" class="text-danger"></span>
+			</div>
+
+			<div class="form-group">
+				<label asp-for="Pais"></label>
+				<input asp-for="Pais" class="form-control" />
+				<span asp-validation-for="Pais" class="text-danger"></span>
+			</div>
+			@*Este es el dropdown de los roles*@
+			<div class="form-group">
+				<select name="ID_Rol" class="form-select" aria-label="Default select example">
+					<option value="0">Seleccione un puesto de trabajo</option>
+					@foreach (var rol in (List<Roles>)ViewBag.Roles)
+					{
+						<option value="@rol.ID_Rol">@rol.NombreRol</option>
+					}
+				</select>
+			</div>
+
+			<div class="form-group mt-3 text-center">
+				<input type="submit" value="Crear" class="btn btn-crear" />
+			</div>
+		</form>
+	</div>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

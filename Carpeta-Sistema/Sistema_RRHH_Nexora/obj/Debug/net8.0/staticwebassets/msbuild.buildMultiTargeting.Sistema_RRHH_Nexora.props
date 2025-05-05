@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Sistema_RRHH_Nexora.props" />
+</Project>
