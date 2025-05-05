@@ -16,36 +16,47 @@ namespace API_NEXORA_INGSW.Controllers
             _context = context;
         }
 
-        //Metodos 
-        [HttpPut("CrearPerfil")]
-        public async Task<string> CrearPerfil(DTO_PerfilProfesional datosPerfil)
+        [HttpPut]
+        public async Task<bool> CrearPerfil(int idEmpleado)
         {
-            string mensaje = "Error inesperado";
-
-            using (var transaccion = await _context.Database.BeginTransactionAsync())
+            try
             {
-                try
+                int idPerfil = 1 + await _context.PerfilProfesional.CountAsync();
+
+                DTO_PerfilProfesional datosPerfil = new DTO_PerfilProfesional
                 {
-                    //llenar tabla perfil profesional
-                    _context.PerfilProfesional.Add(datosPerfil.perfil);
 
-                    await _context.SaveChangesAsync();
+                    perfil = new PerfilProfesional
+                    {
+                        ID_Perfil = idPerfil,
+                        ID_Empleado = idEmpleado,
+                        HistorialLaboral = "Default",
+                        Certificados = new byte[0],
+                        Titulos = new byte[0]
+                    },
+                    idiomas = new IdiomasEmpleado
+                    {
+                        Cod_Idioma = "df",
+                        ID_Perfil = idPerfil
+                    }
+                };
 
-                    _context.IdiomasEmpleado.Add(datosPerfil.idiomas);
+                //llenar tabla perfil profesional
+                _context.PerfilProfesional.Add(datosPerfil.perfil);
 
-                    await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
 
-                    await transaccion.CommitAsync();
+                _context.IdiomasEmpleado.Add(datosPerfil.idiomas);
 
-                    mensaje = "Perfil profesional creado con exito";
-                }
-                catch (Exception ex)
-                {
-                    await transaccion.RollbackAsync();
-                    mensaje = "Error: " + ex.InnerException.Message;
-                }
+                await _context.SaveChangesAsync();
+
+                return true;
             }
-            return mensaje;
+            catch (Exception e)
+            {
+                Console.WriteLine("EROR: " + e.Message);
+            }
+            return false;
         }
 
 

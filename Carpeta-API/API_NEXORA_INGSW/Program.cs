@@ -7,7 +7,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+try
+{
+
+
+    builder.Services.AddSwaggerGen();
+}
+catch (Exception e)
+{
+    Console.WriteLine("Error: " + e.Message);
+}
 
 builder.Services.AddDbContext<API_NEXORA_INGSW.Models.DbContextNexora>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("StringConexion")));

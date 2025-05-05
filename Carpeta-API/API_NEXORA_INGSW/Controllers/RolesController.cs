@@ -15,6 +15,15 @@ namespace API_NEXORA_INGSW.Controllers
             _context = context;
         }
 
+        [HttpGet("Listado")]
+        public async Task<List<Roles>> listadoRoles()
+        {
+            var roles = await _context.Roles.ToListAsync();
+
+            return roles;
+        }
+
+
         //Eliminar TODOS los roles de un empleado
         [HttpDelete("EliminarTodosRoles")]
         public async Task EliminarRolesEmpleado(int idEmpleado)

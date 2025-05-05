@@ -32,7 +32,7 @@ namespace Sistema_RRHH_Nexora.Controllers
         {
             //de momento para pruebas
             solicitud.NoSolicitud = 0;
-            solicitud.Contraseña = "default";
+            solicitud.Contraseña = GenerarClave();
 
             Dictionary<string, char> existe = await ExisteSolicitud(solicitud);
             string mensaje = existe.Keys.First();
@@ -53,7 +53,10 @@ namespace Sistema_RRHH_Nexora.Controllers
 
                 if (subir.IsSuccessStatusCode)
                 {
+                    Email email = new Email();
                     TempData["Exito"] = await subir.Content.ReadAsStringAsync();
+
+                    await email.EnviarEmail(solicitud, 3);
                     return RedirectToAction("SolicitarCuenta", "Login");
                 }
             }
@@ -168,6 +171,21 @@ namespace Sistema_RRHH_Nexora.Controllers
             }
 
             return respuesta;
+        }
+
+        //Generamos una clave temporal para el login
+        public string GenerarClave()
+        {
+            Random rnd = new Random();
+
+            string clave = string.Empty;
+
+            //caracteres utilizados para generar la clave
+            clave = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789";
+
+            //se genera la clave aleatoria retornando su valor
+            return new string(Enumerable.Repeat(clave, 12).Select
+                (s => s[rnd.Next(s.Length)]).ToArray());
         }
     }
 }

@@ -104,10 +104,8 @@ namespace API_NEXORA_INGSW.Controllers
 
         [HttpDelete("EliminarSoli/{id}")]
         //Eliminar solicitud de cuenta
-        public async Task<string> EliminarSolicitud(int id)
+        public async Task<IActionResult> EliminarSolicitud(int id)
         {
-            string mensaje = "Error inesperado";
-
             try
             {
                 var cuentaEliminar = await _context.SolicitudesCuenta.FirstOrDefaultAsync(
@@ -119,14 +117,14 @@ namespace API_NEXORA_INGSW.Controllers
 
                     await _context.SaveChangesAsync();
 
-                    mensaje = "Se rechazó la solicitud de cuenta";
+                    return Ok();
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                mensaje = "Error: " + ex.InnerException.Message;
+                return BadRequest(e.Message);
             }
-            return mensaje;
+            return BadRequest();
         }
 
         //Eliminar soli pero buscando por id empleado

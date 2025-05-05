@@ -28,7 +28,19 @@
 							{
 								@*Todas las opciones del navbar*@
 								<li class="nav-item">
-									<a class="nav-link text-black" asp-area="" asp-controller="Empleados" asp-action="Index">Lista Empleados</a>
+									<a class="nav-link text-black" asp-area="" asp-controller="Empleados" asp-action="Index">Ver Empleados</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-black" asp-area="" asp-controller="Empleados" asp-action="Create">Ingresar Empleados</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-black" asp-area="" asp-controller="Solicitudes" asp-action="Solicitudes">Ver Solicitudes</a>
+								</li>
+							}
+							else
+							{
+								<li class="nav-item">
+									<a class="nav-link text-black" asp-area="" asp-controller="Login" asp-action="PerfilProfesional">Mi Perfil Profesional</a>
 								</li>
 							}
 

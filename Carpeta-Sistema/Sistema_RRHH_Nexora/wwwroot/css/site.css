@@ -48,10 +48,10 @@ body {
 
 .contenedor {
     display: flex;
-    background-color: rgba(211, 211, 211, 0.5); /* Fondo gris semi-transparente */
+    background-color: rgba(211, 211, 211, 0.5);
     border-radius: 15px;
-    overflow: hidden; /* Para que los bordes redondeados se apliquen bien */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Un poco de sombra */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .lado-izquierdo, .lado-derecho {
@@ -64,13 +64,13 @@ body {
 
 .lado-izquierdo {
     width: 300px;
-    background: transparent; /* Sigue viendo el gris */
+    background: transparent;
 }
 
 .lado-derecho {
     width: 300px;
-    background: white; /* Div blanco encima del gris */
-    border-radius: 0 15px 15px 0; /* Redondeado solo en la esquina derecha */
+    background: white;
+    border-radius: 0 15px 15px 0;
 }
 
 .input-estilo {
@@ -99,3 +99,95 @@ body {
     .boton-estilo:hover, .boton-solicitud:hover {
         background: linear-gradient(to right, #0072ff, #00c6ff);
     }
+
+.tabla-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.tabla-nexora {
+    border-collapse: collapse;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+    .tabla-nexora th,
+    .tabla-nexora td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .tabla-nexora th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: none;
+}
+
+.form-nexora {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+    .form-nexora h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-crear {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-crear:hover {
+        background-color: #0097a7;
+    }
+
+.btn-aceptar {
+    background-color: lawngreen;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-rechazar {
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}

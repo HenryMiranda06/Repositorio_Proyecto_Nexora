@@ -9,7 +9,7 @@ namespace Sistema_RRHH_Nexora.Models
 
         public byte[] Titulos { get; set; }
 
-        public byte[] Certificaciones { get; set; }
+        public byte[] Certificados { get; set; }
 
         public string HistorialLaboral { get; set; }
 

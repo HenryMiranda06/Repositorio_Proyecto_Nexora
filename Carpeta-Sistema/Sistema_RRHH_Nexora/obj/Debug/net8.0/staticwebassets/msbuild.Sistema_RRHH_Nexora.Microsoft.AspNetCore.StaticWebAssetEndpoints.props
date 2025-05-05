@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/css/site.b6ru4ewht2.css">
+    <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/css/site.4h6fcopjyv.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b6ru4ewht2"},{"Name":"integrity","Value":"sha256-E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2201"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 21:06:50 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4h6fcopjyv"},{"Name":"integrity","Value":"sha256-ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg="},{"Name":"label","Value":"_content/Sistema_RRHH_Nexora/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3734"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 17:47:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2201"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E6HqSx0z8JJnUW5X7vD8McfJPISDE4jaxPETlb63CiM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 21:06:50 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3734"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 17:47:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Sistema_RRHH_Nexora/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

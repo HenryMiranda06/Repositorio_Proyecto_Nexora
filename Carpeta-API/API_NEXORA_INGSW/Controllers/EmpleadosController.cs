@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API_NEXORA_INGSW.Models;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace API_NEXORA_INGSW.Controllers
 {
@@ -30,47 +32,68 @@ namespace API_NEXORA_INGSW.Controllers
             _concursosController = new ConcursosController(_context);
         }
 
-        [HttpPut("Agregar")]
-        public async Task<string> Agregar(Empleados empleado)
+        [HttpPut("Agregar/{id}")]
+        public async Task<IActionResult> Agregar(Empleados empleado, int id)
         {
-            //
-            string mensaje = "";
-            try
+            using (var transaccion = await _context.Database.BeginTransactionAsync())
             {
-                //se realiza la transacción utilizando el  ORM
-                _context.Empleados.Add(empleado);
+                try
+                {
+                    empleado.ID_Empleado = await GenerarCodigo();
 
-                //se aplican los cambios
-                await _context.SaveChangesAsync();
+                    _context.Empleados.Add(empleado);
 
-                //se indica un mensaje de exito
-                mensaje = $"Empleado {empleado.NombreEmpleado} fue agregado correctamente...";
+                    //agregar el puesto de trabajo
+                    _context.RolesEmpleado.Add(new RolesEmpleado { ID_Empleado = empleado.ID_Empleado, ID_Rol = id});
 
+                    await _context.SaveChangesAsync();
+
+                    if (await _perfilProfesionalController.CrearPerfil(empleado.ID_Empleado))
+                    {
+                        await transaccion.CommitAsync();
+                        //se indica un mensaje de exito
+
+                    }
+                    return Ok("Empleado ingresado correctamente");
+                }
+                catch (Exception e)
+                {
+                    await transaccion.RollbackAsync();
+                    return BadRequest("Ocurrió un error inesperado: " + e.Message.ToString());
+                }
             }
-            catch (Exception ex)
-            {
-
-                mensaje = "Error " + ex.InnerException.Message;
-            }
-            return mensaje;
         }
 
         [HttpGet("Listado")]
         public async Task<List<Empleados>> Listado()
         {
-            //se lee la lista de clientes en la base datos
+            //se lee la lista de empleados en la base datos
             var lista = await _context.Empleados.ToListAsync();
 
-            return lista; //se retorna la lista de clientes
+            return lista; //se retorna la lista de empleados
         }
 
         [HttpGet("Buscar/{cedula}")]
-        public async Task<Empleados> Buscar(int cedula)
+        public async Task<IActionResult> Buscar(int cedula)
         {
-            //se busca el empleado
-            var temp = await _context.Empleados.FirstOrDefaultAsync(x => x.Cedula == cedula);
+            try
+            {
+                //se busca el empleado
+                var temp = await _context.Empleados.FirstOrDefaultAsync(x => x.Cedula == cedula);
 
-            return temp;
+                if (temp != null) //si existe
+                {
+                    return Ok("Ya existe un empleado con ese número de cedula");
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest("Error: " + e.InnerException.Message);
+            }
         }
 
         //Método para realizar el proceso de modificación de datos
@@ -123,15 +146,7 @@ namespace API_NEXORA_INGSW.Controllers
                             await _context.SaveChangesAsync();
                         }
 
-                        await _cuentasController.EliminarSolicitudID(id);  //eliminar solicitudes cuenta del empleado
-
-                        await _rolesController.EliminarRolesEmpleado(id); //eliminar roles del empleado
-
-                        await _idiomasController.EliminarIdiomasEmpleado(id); //eliminar Idiomas del empleado
-
-                        await _concursosController.EliminarParticipante(id); //elimina al empleado de todos los concursos
-
-                        await _perfilProfesionalController.EliminarPerfil(id); //elimina el perfil profesional del empleado
+                        await EliminarDatosEmpleado(id);
 
                         //elimina el empleado
                         _context.Empleados.Remove(empleado);
@@ -152,6 +167,38 @@ namespace API_NEXORA_INGSW.Controllers
             }
 
             return mensaje;
+        }
+
+        [HttpDelete]
+        public async Task EliminarDatosEmpleado(int id)
+        {
+            await _cuentasController.EliminarSolicitudID(id);  //eliminar solicitudes cuenta del empleado
+
+            await _rolesController.EliminarRolesEmpleado(id); //eliminar roles del empleado
+
+            await _idiomasController.EliminarIdiomasEmpleado(id); //eliminar Idiomas del empleado
+
+            await _concursosController.EliminarParticipante(id); //elimina al empleado de todos los concursos
+
+            await _perfilProfesionalController.EliminarPerfil(id); //elimina el perfil profesional del empleado
+        }
+
+
+        [HttpPost]
+        //Metodo que genera un codigo de empleado de 4 digitos de forma random
+        public async Task<int> GenerarCodigo()
+        {
+            Random combinacion = new Random();
+
+            int min = 1000;
+            int max = 9999;
+            int codigo = 0;
+            do
+            {
+                codigo = combinacion.Next(min, max + 1);
+            } while (await _context.Empleados.AnyAsync(e => e.ID_Empleado == codigo));
+
+            return codigo;
         }
     }
 }

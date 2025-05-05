@@ -6,6 +6,7 @@ namespace Sistema_RRHH_Nexora.Models
     public class SolicitudesCuenta
     {
         [Key]
+        [Display(Name = "Número de solicitud")]
         public int? NoSolicitud { get; set; }
 
         [Required(ErrorMessage = "Este campo es obligatorio")]

@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Net;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using Sistema_RRHH_Nexora.Models;
 
@@ -21,42 +23,64 @@ namespace Sistema_RRHH_Nexora.Controllers
         // GET: EmpleadosController
         public async Task<IActionResult> Index() //Lista de empleados
         {
-            List<Empleados> lista = new List<Empleados>();
-
-            HttpResponseMessage response = await client.GetAsync("/api/Empleados/Agregar");
-
-            if (response.IsSuccessStatusCode)
+            if (User.Identity.IsAuthenticated)
             {
-                var resultado = response.Content.ReadAsStringAsync().Result;
+                if (User.IsInRole("RRHH"))
+                {
+                    List<Empleados> lista = new List<Empleados>();
 
-                lista = JsonConvert.DeserializeObject<List<Empleados>>(resultado);
+                    var response = await client.GetAsync("/api/Empleados/Listado");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var resultado = await response.Content.ReadAsStringAsync();
+
+                        lista = JsonConvert.DeserializeObject<List<Empleados>>(resultado);
+
+                        return View(lista);
+
+                    }
+                }
             }
-
-            return View(lista);
+            return View();
         }
 
         //Metodos get y post para crear el empleado
         [HttpGet]
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            return View();
+            ViewBag.Roles = await ListaRoles();
 
+            return View();
         }
 
-        // POST: EmpleadosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind] Empleados empleado)
+        public async Task<IActionResult> Create([Bind] Empleados empleado, int ID_Rol)
         {
-            //primero traemos de la vista
-            if (await BuscarEmpleado(empleado.Cedula)) //si el empleado ya existe
+            if (ID_Rol == 0)
             {
-                TempData["Mensaje"] = "El empleado que desea ingresar ya existe en el sistema.";
-                return RedirectToAction("Create", "Empleados");
+                ModelState.AddModelError("ID_Rol", "Debe seleccionar un puesto de trabajo.");
+
+                ViewBag.Roles = await ListaRoles();
+
+                return View(empleado);
             }
-            else //si no existe, guardar en la BD
+
+            var respuesta = await BuscarEmpleado(empleado.Cedula);
+
+            //primero traemos de la vista
+            if (respuesta.Item2 == 'E') //si el empleado ya existe
             {
-                var agregarEmpleado = await client.PutAsJsonAsync<Empleados>("/api/Empleados/Agregar", empleado);
+                TempData["Mensaje"] = respuesta.Item1;
+                ViewBag.Roles = await ListaRoles();
+                return View(empleado);
+            }
+            else if (respuesta.Item2 == 'N')//si no existe, guardar en la BD
+            {
+                empleado.ID_Empleado = 0;
+
+                var agregarEmpleado = await client.PutAsJsonAsync($"/api/Empleados/Agregar/{ID_Rol}", empleado);
 
                 if (agregarEmpleado.IsSuccessStatusCode) //si se agregó a la BD con éxito
                 {
@@ -64,32 +88,46 @@ namespace Sistema_RRHH_Nexora.Controllers
                 }
                 else
                 {
+                    ViewBag.Roles = await ListaRoles();
                     return View(empleado);
                 }
             }
+            else
+            {
+                TempData["Mensaje"] = respuesta.Item1;
+                ViewBag.Roles = await ListaRoles();
+                return View(empleado);
+            }
         }
 
-        //Metodo buscar Empleado de la API
-        public async Task<bool> BuscarEmpleado(int cedula)
+        //Verifica si el empleado a ingresar existe, mediante su cedula
+        public async Task<(string, char)> BuscarEmpleado(int cedula)
         {
-            Empleados empleado = new Empleados();
-            bool empleadoExiste = false;
+            var response = await client.GetAsync($"/api/Empleados/Buscar/{cedula}");
+            var mensaje = await response.Content.ReadAsStringAsync();
 
-            var response = await client.GetAsync($"/api/Empleados/{cedula}");
+            return response.StatusCode switch
+            {
+                HttpStatusCode.NotFound => ("", 'N'),
+                HttpStatusCode.OK => (mensaje, 'E'),
+                HttpStatusCode.BadRequest => (mensaje, 'F')
+            };
+        }
+
+        public async Task<List<Roles>> ListaRoles()
+        {
+            var response = await client.GetAsync("/api/Roles/Listado");
+
+            List<Roles> lista = new List<Roles>();
 
             if (response.IsSuccessStatusCode)
             {
-                var json = response.Content.ReadAsStringAsync().Result;
+                var resultado = await response.Content.ReadAsStringAsync();
 
-                empleado = JsonConvert.DeserializeObject<Empleados>(json);
-
-                if (empleado != null)
-                {
-                    empleadoExiste = true;
-                }
+                lista = JsonConvert.DeserializeObject<List<Roles>>(resultado);
             }
 
-            return empleadoExiste;
+            return lista;
         }
     }
 }
