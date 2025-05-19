@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U5c29e1iiNuc2/fKHbdDHY9C8vcB4/H2mUo93Nsho2k=",
+  "Hash": "uCrb+xrDNUL+TGs+Nih+jUTq0ztvbZxhlAuYTEkwh6k=",
   "Source": "Sistema_RRHH_Nexora",
   "BasePath": "_content/Sistema_RRHH_Nexora",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "4h6fcopjyv",
+      "Integrity": "ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -99,6 +99,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Fondo.png",
+      "SourceId": "Sistema_RRHH_Nexora",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\",
+      "BasePath": "_content/Sistema_RRHH_Nexora",
+      "RelativePath": "images/Fondo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wlpqlvsyd5",
+      "Integrity": "JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Fondo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Logo5.png",
+      "SourceId": "Sistema_RRHH_Nexora",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\",
+      "BasePath": "_content/Sistema_RRHH_Nexora",
+      "RelativePath": "images/Logo5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dovwgzo1zd",
+      "Integrity": "XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Logo5.png"
+    },
+    {
+      "Identity": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Nexora-fondo.jpg",
+      "SourceId": "Sistema_RRHH_Nexora",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\",
+      "BasePath": "_content/Sistema_RRHH_Nexora",
+      "RelativePath": "images/Nexora-fondo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3z5x4cs1xb",
+      "Integrity": "gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Nexora-fondo.jpg"
     },
     {
       "Identity": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\js\\site.js",
@@ -1321,7 +1384,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "css/site.4h6fcopjyv.css",
       "AssetFile": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1331,7 +1394,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "3734"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1402,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 21:47:09 GMT"
+          "Value": "Fri, 02 May 2025 17:47:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,7 +1416,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "4h6fcopjyv"
         },
         {
           "Name": "label",
@@ -1361,7 +1424,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg="
         }
       ]
     },
@@ -1376,7 +1439,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "3734"
         },
         {
           "Name": "Content-Type",
@@ -1384,11 +1447,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 21:47:09 GMT"
+          "Value": "Fri, 02 May 2025 17:47:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1398,7 +1461,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-ePXcmm3XJECmkFJznRrhiqaQhVWrTC/T99TuOgn5akg="
         }
       ]
     },
@@ -1481,6 +1544,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Fondo.png",
+      "AssetFile": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Fondo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2069803"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Fondo.wlpqlvsyd5.png",
+      "AssetFile": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Fondo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2069803"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 23:10:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wlpqlvsyd5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Fondo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JFWyxKKOB5sZfb/ldiLuSHi9DneeGNvEvO0dWg0h0YM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Logo5.dovwgzo1zd.png",
+      "AssetFile": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Logo5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "253563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 23:11:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dovwgzo1zd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Logo5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U="
+        }
+      ]
+    },
+    {
+      "Route": "images/Logo5.png",
+      "AssetFile": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Logo5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "253563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 23:11:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XaSkcDpbvClK/WdWvi91I75fQlc704iDdIsXg02F89U="
+        }
+      ]
+    },
+    {
+      "Route": "images/Nexora-fondo.3z5x4cs1xb.jpg",
+      "AssetFile": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Nexora-fondo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 20:05:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3z5x4cs1xb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Nexora-fondo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE="
+        }
+      ]
+    },
+    {
+      "Route": "images/Nexora-fondo.jpg",
+      "AssetFile": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\images\\Nexora-fondo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Apr 2025 20:05:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gS9R/icdvku92dVx5kMvaJM4nsJ7RKbru06wbKLhqgE="
         }
       ]
     },
@@ -6263,7 +6572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 23:06:45 GMT"
+          "Value": "Sat, 26 Apr 2025 23:23:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6300,7 +6609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 23:06:45 GMT"
+          "Value": "Sat, 26 Apr 2025 23:23:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6345,7 +6654,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 23:06:45 GMT"
+          "Value": "Sat, 26 Apr 2025 23:23:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6390,7 +6699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 23:06:45 GMT"
+          "Value": "Sat, 26 Apr 2025 23:23:33 GMT"
         },
         {
           "Name": "Cache-Control",

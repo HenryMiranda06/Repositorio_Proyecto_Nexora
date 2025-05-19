@@ -18,11 +18,16 @@ namespace API_NEXORA_INGSW.Controllers
         [HttpPut("SolicitarCuenta")]
         public async Task<string> SolicitudCrearCuenta(SolicitudesCuenta solicitud)
         {
-            string mensaje = "";
+            string mensaje = "Error inesperado";
 
             try
             {
-                _context.Solicitudes.Add(solicitud);
+                //traer el siguiente ID para la solicitud
+                int sigID = await _context.SolicitudesCuenta.CountAsync();
+
+                solicitud.NoSolicitud = sigID + 1;
+
+                _context.SolicitudesCuenta.Add(solicitud);
 
                 await _context.SaveChangesAsync();
 
@@ -35,6 +40,38 @@ namespace API_NEXORA_INGSW.Controllers
             }
 
             return mensaje;
+        }
+
+        //verifica si existe una solicitud con un correo específico
+        [HttpPut("VerificarSolicitud")]
+        public async Task<IActionResult> VerificarSolicitud(SolicitudesCuenta solicitud)
+        {
+            try
+            {
+                var empleado = await _context.Empleados.FirstOrDefaultAsync(e => e.ID_Empleado == solicitud.ID_Empleado);
+
+                if (empleado == null)
+                {
+                    return NotFound("El código es inválido.");
+                }
+
+                var credenciales = await _context.SolicitudesCuenta.FirstOrDefaultAsync(
+               t => t.ID_Empleado == solicitud.ID_Empleado || t.CorreoCuenta.Equals(solicitud.CorreoCuenta));
+
+                if (credenciales != null) //si ya hay una solicitud
+                {
+                    return Unauthorized("Ya existe una solicitud pendiente de aprobación.");
+                }
+                else
+                {
+                    return Ok();
+                }
+            }
+            catch (Exception)
+            {
+                return BadRequest("Ocurrió un error inesperado");
+
+            }
         }
 
         [HttpPut("CrearCuenta")]
@@ -67,29 +104,27 @@ namespace API_NEXORA_INGSW.Controllers
 
         [HttpDelete("EliminarSoli/{id}")]
         //Eliminar solicitud de cuenta
-        public async Task<string> EliminarSolicitud(int id)
+        public async Task<IActionResult> EliminarSolicitud(int id)
         {
-            string mensaje = "Error inesperado";
-
             try
             {
-                var cuentaEliminar = await _context.Solicitudes.FirstOrDefaultAsync(
+                var cuentaEliminar = await _context.SolicitudesCuenta.FirstOrDefaultAsync(
                     t => t.NoSolicitud == id);
 
                 if (cuentaEliminar != null)
                 {
-                    _context.Solicitudes.Remove(cuentaEliminar);
+                    _context.SolicitudesCuenta.Remove(cuentaEliminar);
 
                     await _context.SaveChangesAsync();
 
-                    mensaje = "Se rechazó la solicitud de cuenta";
+                    return Ok();
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                mensaje = "Error: " + ex.InnerException.Message;
+                return BadRequest(e.Message);
             }
-            return mensaje;
+            return BadRequest();
         }
 
         //Eliminar soli pero buscando por id empleado
@@ -98,12 +133,12 @@ namespace API_NEXORA_INGSW.Controllers
         {
             try
             {
-                var cuentaEliminar = await _context.Solicitudes.FirstOrDefaultAsync(
+                var cuentaEliminar = await _context.SolicitudesCuenta.FirstOrDefaultAsync(
                     t => t.ID_Empleado == id);
 
                 if (cuentaEliminar != null)
                 {
-                    _context.Solicitudes.Remove(cuentaEliminar);
+                    _context.SolicitudesCuenta.Remove(cuentaEliminar);
 
                     await _context.SaveChangesAsync();
                 }
@@ -111,6 +146,27 @@ namespace API_NEXORA_INGSW.Controllers
             catch (Exception)
             {
             }
+        }
+
+        [HttpPut("VerificarCuenta")]
+        public async Task<char> VerificarCredenciales([FromBody] Cuentas credenciales)
+        {
+            char respuesta = 'f';
+
+            var cuenta = await _context.Cuentas.
+                FirstOrDefaultAsync(t => t.Correo == credenciales.Correo &&
+                t.Contraseña == credenciales.Contraseña);
+
+            if (cuenta != null)
+            {
+                respuesta = 'e';
+            }
+            else
+            {
+                respuesta = 'n';
+            }
+
+            return respuesta;
         }
     }
 }

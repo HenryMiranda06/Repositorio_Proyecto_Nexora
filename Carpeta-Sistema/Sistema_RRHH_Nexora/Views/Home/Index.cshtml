@@ -1,8 +1,42 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Sistema_RRHH_Nexora.Models.Cuentas
+
+@{
+	ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="primerDIV">
+	<div class="contenedor">
+		<div class="lado-izquierdo">
+			<h2>¿Desea solicitar una cuenta?</h2>
+			<a asp-controller="Login" asp-action="SolicitarCuenta" class="boton-solicitud">Enviar solicitud</a>
+		</div>
+		<div class="lado-derecho">
+			<h2>Iniciar sesión</h2>
+			@if (TempData["Mensaje"] != null)
+			{
+				<div class="alert alert-danger" role="alert">
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+					<strong>@TempData["Mensaje"]</strong>
+				</div>
+			}
+			<form asp-controller="Login" asp-action="Login" method="post">
+				<div class="form-group">
+					<label asp-for="Correo" class="control-label">Email</label>
+					<input asp-for="Correo" type="email" class="input-estilo form-control" />
+					<span asp-validation-for="Correo" class="text-danger"></span>
+				</div>
+
+				<div class="form-group">
+					<label asp-for="Contraseña" class="control-label">Contraseña</label>
+					<input asp-for="Contraseña" type="password" class="input-estilo form-control" />
+					<span asp-validation-for="Contraseña" class="text-danger"></span>
+				</div>
+
+				<div class="form-group mt-3">
+					<button type="submit" class="boton-estilo">Acceder</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
 </div>

@@ -9,7 +9,7 @@ namespace API_NEXORA_INGSW.Models
 
         public byte[] Titulos { get; set; }
 
-        public byte[] Certificaciones { get; set; }
+        public byte[] Certificados { get; set; }
 
         public string HistorialLaboral { get; set; }
 

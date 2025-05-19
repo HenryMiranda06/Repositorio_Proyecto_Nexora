@@ -3,96 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\perfilprofesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\dto_perfilprofesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\dto_perfilprofesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\dto_concursorequisitos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\dto_concursorequisitos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\concursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\concursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\idiomascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\idiomascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\cuentascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\cuentascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\requisitos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\requisitos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\postulaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\postulaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\perfilprofesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\perfilprofesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\idiomas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\idiomas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\dbcontextnexora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\dbcontextnexora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\concursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\concursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\rolesempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\rolesempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\requisitosconcurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\requisitosconcurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\idiomasempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\idiomasempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-api\\api_nexora_ingsw\\controllers\\solicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C737A379-9D62-4A68-80D8-389D63BA6911}|API_NEXORA_INGSW.csproj|solutionrelative:controllers\\solicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,288 +58,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DTO_PerfilProfesional.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\DTO_PerfilProfesional.cs",
-              "RelativeDocumentMoniker": "Models\\DTO_PerfilProfesional.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\DTO_PerfilProfesional.cs",
-              "RelativeToolTip": "Models\\DTO_PerfilProfesional.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T00:25:49.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DTO_ConcursoRequisitos.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\DTO_ConcursoRequisitos.cs",
-              "RelativeDocumentMoniker": "Models\\DTO_ConcursoRequisitos.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\DTO_ConcursoRequisitos.cs",
-              "RelativeToolTip": "Models\\DTO_ConcursoRequisitos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T00:23:19.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IdiomasController.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\IdiomasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\IdiomasController.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\IdiomasController.cs",
-              "RelativeToolTip": "Controllers\\IdiomasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T22:08:57.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "Controllers\\RolesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T20:17:39.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConcursosController.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\ConcursosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ConcursosController.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\ConcursosController.cs",
-              "RelativeToolTip": "Controllers\\ConcursosController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwB8AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T04:40:36.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Roles.cs",
-              "RelativeDocumentMoniker": "Models\\Roles.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Roles.cs",
-              "RelativeToolTip": "Models\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T04:15:06.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RequisitosConcurso.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\RequisitosConcurso.cs",
-              "RelativeDocumentMoniker": "Models\\RequisitosConcurso.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\RequisitosConcurso.cs",
-              "RelativeToolTip": "Models\\RequisitosConcurso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T04:14:49.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Requisitos.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Requisitos.cs",
-              "RelativeDocumentMoniker": "Models\\Requisitos.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Requisitos.cs",
-              "RelativeToolTip": "Models\\Requisitos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T04:14:39.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Postulaciones.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Postulaciones.cs",
-              "RelativeDocumentMoniker": "Models\\Postulaciones.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Postulaciones.cs",
-              "RelativeToolTip": "Models\\Postulaciones.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T04:14:07.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T01:08:17.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "RolesEmpleado.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\RolesEmpleado.cs",
               "RelativeDocumentMoniker": "Models\\RolesEmpleado.cs",
               "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\RolesEmpleado.cs",
               "RelativeToolTip": "Models\\RolesEmpleado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T01:04:37.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Concursos.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Concursos.cs",
-              "RelativeDocumentMoniker": "Models\\Concursos.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Concursos.cs",
-              "RelativeToolTip": "Models\\Concursos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T01:04:28.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Empleados.cs",
-              "RelativeDocumentMoniker": "Models\\Empleados.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Empleados.cs",
-              "RelativeToolTip": "Models\\Empleados.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T01:04:17.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PerfilProfesional.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\PerfilProfesional.cs",
-              "RelativeDocumentMoniker": "Models\\PerfilProfesional.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\PerfilProfesional.cs",
-              "RelativeToolTip": "Models\\PerfilProfesional.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T01:04:07.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IdiomasEmpleado.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\IdiomasEmpleado.cs",
-              "RelativeDocumentMoniker": "Models\\IdiomasEmpleado.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\IdiomasEmpleado.cs",
-              "RelativeToolTip": "Models\\IdiomasEmpleado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T01:03:56.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Idiomas.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Idiomas.cs",
-              "RelativeDocumentMoniker": "Models\\Idiomas.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Idiomas.cs",
-              "RelativeToolTip": "Models\\Idiomas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T01:03:42.544Z"
+              "WhenOpened": "2025-05-03T05:27:59.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PerfilProfesionalController.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\PerfilProfesionalController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PerfilProfesionalController.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\PerfilProfesionalController.cs",
-              "RelativeToolTip": "Controllers\\PerfilProfesionalController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAArwCEAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T04:12:56.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SolicitudesCuenta.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\SolicitudesCuenta.cs",
-              "RelativeDocumentMoniker": "Models\\SolicitudesCuenta.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\SolicitudesCuenta.cs",
-              "RelativeToolTip": "Models\\SolicitudesCuenta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:38:30.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CuentasController.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\CuentasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CuentasController.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\CuentasController.cs",
-              "RelativeToolTip": "Controllers\\CuentasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:21:57.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DbContextNexora.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\DbContextNexora.cs",
-              "RelativeDocumentMoniker": "Models\\DbContextNexora.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\DbContextNexora.cs",
-              "RelativeToolTip": "Models\\DbContextNexora.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwCEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:41:59.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Cuentas.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Cuentas.cs",
-              "RelativeDocumentMoniker": "Models\\Cuentas.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Models\\Cuentas.cs",
-              "RelativeToolTip": "Models\\Cuentas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T02:41:58.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "EmpleadosController.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\EmpleadosController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmpleadosController.cs",
               "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\EmpleadosController.cs",
               "RelativeToolTip": "Controllers\\EmpleadosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAYwEkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T01:54:55.536Z",
+              "WhenOpened": "2025-05-03T04:30:50.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-17T01:31:24.463Z"
+              "DocumentIndex": 1,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:29:18.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SolicitudesController.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\SolicitudesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SolicitudesController.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-API\\API_NEXORA_INGSW\\Controllers\\SolicitudesController.cs",
+              "RelativeToolTip": "Controllers\\SolicitudesController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAADgv1kAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T05:30:29.483Z",
+              "EditorCaption": ""
             }
           ]
         },
