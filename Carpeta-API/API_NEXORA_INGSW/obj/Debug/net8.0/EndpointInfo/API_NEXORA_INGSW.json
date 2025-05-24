@@ -124,54 +124,6 @@
         }
       }
     },
-    "/api/Cuentas/SolicitarCuenta": {
-      "put": {
-        "tags": [
-          "Cuentas"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SolicitudesCuenta"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SolicitudesCuenta"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SolicitudesCuenta"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Cuentas/VerificarSolicitud": {
       "put": {
         "tags": [
@@ -323,24 +275,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -400,7 +335,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Empleados"
+                    "$ref": "#/components/schemas/DTO_ListaEmpleados"
                   }
                 }
               },
@@ -408,7 +343,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Empleados"
+                    "$ref": "#/components/schemas/DTO_ListaEmpleados"
                   }
                 }
               },
@@ -416,7 +351,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Empleados"
+                    "$ref": "#/components/schemas/DTO_ListaEmpleados"
                   }
                 }
               }
@@ -803,54 +738,6 @@
         }
       }
     },
-    "/api/Roles/RolesEmpleado": {
-      "put": {
-        "tags": [
-          "Roles"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cuentas"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cuentas"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Cuentas"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Solicitudes/Listado": {
       "get": {
         "tags": [
@@ -1076,6 +963,23 @@
           },
           "requisitos": {
             "$ref": "#/components/schemas/RequisitosConcurso"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DTO_ListaEmpleados": {
+        "type": "object",
+        "properties": {
+          "idPerfil": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lista": {
+            "$ref": "#/components/schemas/Empleados"
+          },
+          "correoEmp": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Authentication;
 using Newtonsoft.Json;
 using System.Net;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Sistema_RRHH_Nexora.Controllers
 {
@@ -30,43 +32,32 @@ namespace Sistema_RRHH_Nexora.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SolicitarCuenta(SolicitudesCuenta solicitud)
         {
-            //de momento para pruebas
-            solicitud.NoSolicitud = 0;
-            solicitud.Contraseña = GenerarClave();
-
-            Dictionary<string, char> existe = await ExisteSolicitud(solicitud);
-            string mensaje = existe.Keys.First();
-
-            if (!ModelState.IsValid)
+            try
             {
-                return View(solicitud);
-            }
+                //de momento para pruebas
+                solicitud.NoSolicitud = 0;
+                solicitud.Contraseña = GenerarClave();
 
-            if (existe.Values.Contains('E'))
-            {
-                TempData["Mensaje"] = mensaje;
-                return View(solicitud);
-            }
-            else if (existe.Values.Contains('N')) //se guarda la solicitud de crear cuenta
-            {
-                var subir = await client.PutAsJsonAsync("/api/Cuentas/SolicitarCuenta", solicitud);
+                if (!ModelState.IsValid)
+                {
+                    return View(solicitud);
+                }
 
-                if (subir.IsSuccessStatusCode)
+                var response = await client.PutAsJsonAsync($"/api/Cuentas/VerificarSolicitud", solicitud);
+                string mensaje = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode) //significa que el codigo devolvió 200 OK
                 {
                     Email email = new Email();
-                    TempData["Exito"] = await subir.Content.ReadAsStringAsync();
-
                     await email.EnviarEmail(solicitud, 3);
-                    return RedirectToAction("SolicitarCuenta", "Login");
                 }
-            }
-            else
-            {
                 TempData["Mensaje"] = mensaje;
                 return View(solicitud);
             }
-
-            return View(solicitud);
+            catch (Exception)
+            {
+                TempData["Mensaje"] = "No se logra conectar con el servidor";
+                return View(solicitud);
+            }
         }
 
         [HttpGet]
@@ -79,51 +70,37 @@ namespace Sistema_RRHH_Nexora.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(Cuentas cuenta)
         {
-            if (string.IsNullOrEmpty(cuenta.Correo) || string.IsNullOrEmpty(cuenta.Contraseña))
+            try
             {
-                TempData["Mensaje"] = "Ambos campos deben estar llenos";
+                //cuenta.ID_Empleado = 0;
+
+                var response = await client.PutAsJsonAsync("/api/Cuentas/VerificarCuenta", cuenta);
+                var datos = await response.Content.ReadFromJsonAsync<DTO_DatosCuenta>();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var credencialesUsuario = new List<Claim>() { new Claim(ClaimTypes.Name, datos.Cuenta.Correo),
+                        new Claim(ClaimTypes.Role, datos.NombreRol) };
+
+                    var identidadUsuario = new ClaimsIdentity(credencialesUsuario, "User Identity");
+
+                    var entidadUsuario = new ClaimsPrincipal(new[] { identidadUsuario });
+
+                    await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme); //cerrar sesión anterior, por seguridad
+
+                    await HttpContext.SignInAsync(entidadUsuario);
+
+                    return RedirectToAction("Login", "Login");
+                }
+
+                TempData["Mensaje"] = datos.Mensaje;
                 return RedirectToAction("Index", "Home");
             }
-
-            cuenta.ID_Empleado = 0;
-
-            var response = await client.PutAsJsonAsync("/api/Cuentas/VerificarCuenta", cuenta);
-
-            if (response.IsSuccessStatusCode)
+            catch (Exception)
             {
-                var existe = await response.Content.ReadFromJsonAsync<char>();
-
-                if (existe == 'e')
-                {
-                    if (await VerificarRol(cuenta) == 'e')
-                    {
-                        var credencialesCuenta = new List<Claim>
-                        {
-                             new Claim(ClaimTypes.Name, cuenta.Correo),
-                             new Claim(ClaimTypes.Role, "RRHH")
-                        };
-
-                        var granIdentity = new ClaimsIdentity(credencialesCuenta, "User Identity");
-                        var userPrincipal = new ClaimsPrincipal(new[] { granIdentity });
-
-                        await HttpContext.SignInAsync(userPrincipal);
-                        return RedirectToAction("Login", "Login");
-                    }
-                    else
-                    {
-                        TempData["Mensaje"] = "No tienes permisos para acceder.";
-                        return RedirectToAction("Index", "Home");
-                    }
-                }
-                else
-                {
-                    TempData["Mensaje"] = "Error, el correo o contraseña es incorrecto.";
-                    return RedirectToAction("Index", "Home");
-                }
+                TempData["Mensaje"] = "Error al conectar con el servidor.";
+                return RedirectToAction("Index", "Home");
             }
-
-            TempData["Mensaje"] = "Error al conectar con el servidor.";
-            return RedirectToAction("Index", "Home");
         }
 
         //Desloguearse
@@ -131,46 +108,6 @@ namespace Sistema_RRHH_Nexora.Controllers
         {
             await HttpContext.SignOutAsync();
             return RedirectToAction("Index", "Home");
-        }
-
-
-        public async Task<Dictionary<string, char>> ExisteSolicitud(SolicitudesCuenta cuenta)
-        {
-            Dictionary<string, char> respuesta = new Dictionary<string, char>();
-
-            var response = await client.PutAsJsonAsync($"/api/Cuentas/VerificarSolicitud", cuenta);
-
-            string mensaje = await response.Content.ReadAsStringAsync();
-
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                respuesta.Add(mensaje, 'N'); //No existe solicitud con ese correo
-            }
-            else if (response.StatusCode == HttpStatusCode.Unauthorized)
-            {
-                respuesta.Add(mensaje, 'E'); //existe solicitud
-            }
-            else
-            {
-                respuesta.Add(mensaje, 'F'); //error de la API
-            }
-
-            return respuesta;
-        }
-
-        //Metodo para ver si la cuenta que se va a loguear es de recursos humanos
-        public async Task<char> VerificarRol(Cuentas cuenta)
-        {
-            char respuesta = 'f';
-
-            var response = await client.PutAsJsonAsync($"/api/Roles/RolesEmpleado", cuenta);
-
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                respuesta = 'e';
-            }
-
-            return respuesta;
         }
 
         //Generamos una clave temporal para el login

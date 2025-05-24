@@ -6,6 +6,7 @@ namespace Sistema_RRHH_Nexora.Models
     {
         //Atributos
         [Key]
+        [Display(Name = "ID Empleado")]
         public int? ID_Empleado { get; set; }
 
         [Display(Name = "Nombre del empleado")]

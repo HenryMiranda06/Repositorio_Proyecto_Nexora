@@ -15,11 +15,8 @@ namespace API_NEXORA_INGSW.Controllers
             _context = context;
         }
 
-        [HttpPut("SolicitarCuenta")]
-        public async Task<string> SolicitudCrearCuenta(SolicitudesCuenta solicitud)
+        private async Task<bool> SolicitudCrearCuenta(SolicitudesCuenta solicitud)
         {
-            string mensaje = "Error inesperado";
-
             try
             {
                 //traer el siguiente ID para la solicitud
@@ -30,16 +27,12 @@ namespace API_NEXORA_INGSW.Controllers
                 _context.SolicitudesCuenta.Add(solicitud);
 
                 await _context.SaveChangesAsync();
-
-                mensaje = "Se envió su solicitud exitosamente." +
-                    "\nEspere la respuesta de RRHH";
+                return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                mensaje = "Error " + e.InnerException.Message;
+                return false;
             }
-
-            return mensaje;
         }
 
         //verifica si existe una solicitud con un correo específico
@@ -48,24 +41,41 @@ namespace API_NEXORA_INGSW.Controllers
         {
             try
             {
-                var empleado = await _context.Empleados.FirstOrDefaultAsync(e => e.ID_Empleado == solicitud.ID_Empleado);
-
+                var empleado = await _context.Empleados.FirstOrDefaultAsync(x => x.ID_Empleado == solicitud.ID_Empleado); //buscamos empleado
                 if (empleado == null)
                 {
-                    return NotFound("El código es inválido.");
+                    return BadRequest("Código de empleado inválido");
                 }
 
-                var credenciales = await _context.SolicitudesCuenta.FirstOrDefaultAsync(
-               t => t.ID_Empleado == solicitud.ID_Empleado || t.CorreoCuenta.Equals(solicitud.CorreoCuenta));
+                var cuenta = await _context.Cuentas.FirstOrDefaultAsync(x => x.ID_Empleado == solicitud.ID_Empleado); //cuenta por idEmpleado
+                if (cuenta != null)
+                {
+                    return BadRequest("El empleado ya posee una cuenta");
+                }
 
-                if (credenciales != null) //si ya hay una solicitud
+                var existeSolicitud = await _context.SolicitudesCuenta.FirstOrDefaultAsync(x => x.ID_Empleado == solicitud.ID_Empleado); //solicitud por idEmpleado
+                if (existeSolicitud != null)
                 {
-                    return Unauthorized("Ya existe una solicitud pendiente de aprobación.");
+                    return BadRequest("Ya tiene una solicitud de creación de cuenta. Espere su respuesta");
                 }
-                else
+
+                var correoCuenta = await _context.Cuentas.FirstOrDefaultAsync(x => x.Correo == solicitud.CorreoCuenta); //buscar cuenta por correo
+                if (correoCuenta != null)
                 {
-                    return Ok();
+                    return BadRequest("El correo indicado se encuentra en uso, utilice uno distinto");
                 }
+
+                var correoSolicitud = await _context.SolicitudesCuenta.FirstOrDefaultAsync(x => x.CorreoCuenta == solicitud.CorreoCuenta); //buscar solicitud por correo
+                if (correoSolicitud != null)
+                {
+                    return BadRequest("Ya existe una solicitud con ese correo, utilice uno distinto");
+                }
+
+                if (await SolicitudCrearCuenta(solicitud))
+                {
+                    return Ok("Solicitud procesada con éxito");
+                }
+                return BadRequest("Error inesperado");
             }
             catch (Exception)
             {
@@ -149,24 +159,39 @@ namespace API_NEXORA_INGSW.Controllers
         }
 
         [HttpPut("VerificarCuenta")]
-        public async Task<char> VerificarCredenciales([FromBody] Cuentas credenciales)
+        public async Task<IActionResult> VerificarCredenciales([FromBody] Cuentas credenciales)
         {
-            char respuesta = 'f';
-
-            var cuenta = await _context.Cuentas.
-                FirstOrDefaultAsync(t => t.Correo == credenciales.Correo &&
-                t.Contraseña == credenciales.Contraseña);
-
-            if (cuenta != null)
+            try
             {
-                respuesta = 'e';
-            }
-            else
-            {
-                respuesta = 'n';
-            }
+                var existeCuenta = await _context.Cuentas.FirstOrDefaultAsync(x => x.Correo == credenciales.Correo
+                && x.Contraseña == credenciales.Contraseña);
 
-            return respuesta;
+                if (existeCuenta != null)
+                {
+                    var rol = await _context.RolesEmpleado.FirstOrDefaultAsync(x => x.ID_Empleado == existeCuenta.ID_Empleado);
+                    var nombreRol = await _context.Roles.FirstOrDefaultAsync(x => x.ID_Rol == rol.ID_Rol);
+
+                    var dto = new DTO_DatosCuenta
+                    {
+                        Cuenta = new Cuentas
+                        {
+                            ID_Empleado = existeCuenta.ID_Empleado,
+                            Correo = credenciales.Correo,
+                            Contraseña = credenciales.Contraseña
+                        },
+                        IdRol = rol.ID_Rol,
+                        NombreRol = nombreRol.NombreRol,
+                        Mensaje = "Credenciales"
+                    }; //DTO_DatosCuenta
+
+                    return Ok(dto);
+                }
+                return Unauthorized(new DTO_DatosCuenta { Mensaje = "Correo o contraseña incorrectos." });
+            }
+            catch (Exception)
+            {
+                return BadRequest(new DTO_DatosCuenta { Mensaje = "Error inesperado, intente de nuevo" });
+            }
         }
     }
 }
