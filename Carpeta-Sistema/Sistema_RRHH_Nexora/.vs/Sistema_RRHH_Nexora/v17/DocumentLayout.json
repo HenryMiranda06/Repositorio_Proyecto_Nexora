@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\controllers\\solicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\solicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\dto_datoscuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\dto_datoscuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\views\\login\\solicitarcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\login\\solicitarcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\controllers\\solicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:controllers\\solicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:views\\solicitudes\\solicitudes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:models\\solicitudescuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|c:\\users\\henry\\documents\\github\\repositorio_proyecto_nexora\\carpeta-sistema\\sistema_rrhh_nexora\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D4843972-A31D-485E-888E-E6C8DD979FD9}|Sistema_RRHH_Nexora.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -78,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -111,32 +119,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SolicitarCuenta.cshtml",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\SolicitarCuenta.cshtml",
-              "RelativeDocumentMoniker": "Views\\Login\\SolicitarCuenta.cshtml",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\SolicitarCuenta.cshtml",
-              "RelativeToolTip": "Views\\Login\\SolicitarCuenta.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-24T02:01:08.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Empleados.cs",
-              "RelativeDocumentMoniker": "Models\\Empleados.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Empleados.cs",
-              "RelativeToolTip": "Models\\Empleados.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "Cuentas.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Cuentas.cs",
+              "RelativeDocumentMoniker": "Models\\Cuentas.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Cuentas.cs",
+              "RelativeToolTip": "Models\\Cuentas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T01:44:51.997Z",
+              "WhenOpened": "2025-05-24T16:25:03.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "DTO_ListaEmpleados.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\DTO_ListaEmpleados.cs",
               "RelativeDocumentMoniker": "Models\\DTO_ListaEmpleados.cs",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "Models\\DTO_ListaEmpleados.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T00:45:04.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T00:45:04.152Z"
             },
             {
               "$type": "Document",
@@ -155,14 +149,14 @@
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAqwEEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAuwGcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T09:24:36.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -170,12 +164,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-03T06:46:34.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T06:46:34.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Roles.cs",
               "RelativeDocumentMoniker": "Models\\Roles.cs",
@@ -187,7 +180,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "SolicitudesController.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\SolicitudesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SolicitudesController.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\SolicitudesController.cs",
+              "RelativeToolTip": "Controllers\\SolicitudesController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAQwDcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T03:27:01.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SolicitudesCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\SolicitudesCuenta.cs",
+              "RelativeDocumentMoniker": "Models\\SolicitudesCuenta.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\SolicitudesCuenta.cs",
+              "RelativeToolTip": "Models\\SolicitudesCuenta.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T21:06:57.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Empleados.cs",
+              "RelativeDocumentMoniker": "Models\\Empleados.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Empleados.cs",
+              "RelativeToolTip": "Models\\Empleados.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T01:44:51.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SolicitarCuenta.cshtml",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\SolicitarCuenta.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\SolicitarCuenta.cshtml",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Login\\SolicitarCuenta.cshtml",
+              "RelativeToolTip": "Views\\Login\\SolicitarCuenta.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T02:01:08.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DTO_DatosCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\DTO_DatosCuenta.cs",
+              "RelativeDocumentMoniker": "Models\\DTO_DatosCuenta.cs",
+              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\DTO_DatosCuenta.cs",
+              "RelativeToolTip": "Models\\DTO_DatosCuenta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T15:50:52.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "EmpleadosController.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\EmpleadosController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmpleadosController.cs",
@@ -200,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Email.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\Email.cs",
               "RelativeDocumentMoniker": "Models\\Email.cs",
@@ -208,37 +264,11 @@
               "RelativeToolTip": "Models\\Email.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAYwBEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T03:49:14.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T03:49:14.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SolicitudesController.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\SolicitudesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SolicitudesController.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\SolicitudesController.cs",
-              "RelativeToolTip": "Controllers\\SolicitudesController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T03:27:01.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SolicitudesCuenta.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\SolicitudesCuenta.cs",
-              "RelativeDocumentMoniker": "Models\\SolicitudesCuenta.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Models\\SolicitudesCuenta.cs",
-              "RelativeToolTip": "Models\\SolicitudesCuenta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T21:06:57.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -250,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -262,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Empleados\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Empleados\\Index.cshtml",
@@ -270,12 +300,11 @@
               "RelativeToolTip": "Views\\Empleados\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T17:38:15.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T17:38:15.768Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Empleados\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Empleados\\Edit.cshtml",
@@ -287,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Empleados\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Empleados\\Delete.cshtml",
@@ -299,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Empleados\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Empleados\\Create.cshtml",
@@ -311,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Solicitudes.cshtml",
               "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Repositorio_Proyecto_Nexora\\Carpeta-Sistema\\Sistema_RRHH_Nexora\\Views\\Solicitudes\\Solicitudes.cshtml",
               "RelativeDocumentMoniker": "Views\\Solicitudes\\Solicitudes.cshtml",

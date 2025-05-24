@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using System.Net;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Sistema_RRHH_Nexora.Controllers
 {
@@ -65,35 +66,42 @@ namespace Sistema_RRHH_Nexora.Controllers
             return View();
         }
 
-        /*[HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(Cuentas cuenta)
         {
             try
             {
-                if (!ModelState.IsValid)
-                {
-                    TempData["Mensaje"] = "Ambos campos deben estar llenos";
-                    return RedirectToAction("Index", "Home");
-                }
-
-                cuenta.ID_Empleado = 0;
+                //cuenta.ID_Empleado = 0;
 
                 var response = await client.PutAsJsonAsync("/api/Cuentas/VerificarCuenta", cuenta);
-                var datos = await response.Content.ReadAsStringAsync();
+                var datos = await response.Content.ReadFromJsonAsync<DTO_DatosCuenta>();
 
                 if (response.IsSuccessStatusCode)
                 {
+                    var credencialesUsuario = new List<Claim>() { new Claim(ClaimTypes.Name, datos.Cuenta.Correo),
+                        new Claim(ClaimTypes.Role, datos.NombreRol) };
+
+                    var identidadUsuario = new ClaimsIdentity(credencialesUsuario, "User Identity");
+
+                    var entidadUsuario = new ClaimsPrincipal(new[] { identidadUsuario });
+
+                    await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme); //cerrar sesión anterior, por seguridad
+
+                    await HttpContext.SignInAsync(entidadUsuario);
+
+                    return RedirectToAction("Login", "Login");
                 }
 
-                TempData["Mensaje"] = "";
+                TempData["Mensaje"] = datos.Mensaje;
+                return RedirectToAction("Index", "Home");
             }
             catch (Exception)
             {
                 TempData["Mensaje"] = "Error al conectar con el servidor.";
                 return RedirectToAction("Index", "Home");
             }
-        }*/
+        }
 
         //Desloguearse
         public async Task<IActionResult> Logout()

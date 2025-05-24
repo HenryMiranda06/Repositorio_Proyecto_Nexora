@@ -151,17 +151,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Char",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "API_NEXORA_INGSW.Controllers.CuentasController",
@@ -467,32 +457,6 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[API_NEXORA_INGSW.Models.Roles, API_NEXORA_INGSW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "API_NEXORA_INGSW.Controllers.RolesController",
-    "Method": "VerificarRolRRHH",
-    "RelativePath": "api/Roles/RolesEmpleado",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "cuenta",
-        "Type": "API_NEXORA_INGSW.Models.Cuentas",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -168,28 +168,29 @@ namespace API_NEXORA_INGSW.Controllers
 
                 if (existeCuenta != null)
                 {
-                    var rol = await _context.RolesEmpleado.FirstOrDefaultAsync(x => x.ID_Empleado == credenciales.ID_Empleado);
+                    var rol = await _context.RolesEmpleado.FirstOrDefaultAsync(x => x.ID_Empleado == existeCuenta.ID_Empleado);
                     var nombreRol = await _context.Roles.FirstOrDefaultAsync(x => x.ID_Rol == rol.ID_Rol);
 
                     var dto = new DTO_DatosCuenta
                     {
                         Cuenta = new Cuentas
                         {
-                            ID_Empleado = credenciales.ID_Empleado,
+                            ID_Empleado = existeCuenta.ID_Empleado,
                             Correo = credenciales.Correo,
                             Contraseña = credenciales.Contraseña
                         },
                         IdRol = rol.ID_Rol,
-                        NombreRol = nombreRol.NombreRol
-                    };
+                        NombreRol = nombreRol.NombreRol,
+                        Mensaje = "Credenciales"
+                    }; //DTO_DatosCuenta
 
-                    return Ok(new { mensaje = "Credenciales", datos = dto });
+                    return Ok(dto);
                 }
-                return Unauthorized(new { mensaje = "Correo o contraseña incorrectos" });
+                return Unauthorized(new DTO_DatosCuenta { Mensaje = "Correo o contraseña incorrectos." });
             }
             catch (Exception)
             {
-                return BadRequest(new { mensaje = "Ocurrió un error inesperado" });
+                return BadRequest(new DTO_DatosCuenta { Mensaje = "Error inesperado, intente de nuevo" });
             }
         }
     }

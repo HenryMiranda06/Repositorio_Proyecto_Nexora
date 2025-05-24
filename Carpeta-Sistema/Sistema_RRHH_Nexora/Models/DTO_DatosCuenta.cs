@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace API_NEXORA_INGSW.Models
+﻿namespace Sistema_RRHH_Nexora.Models
 {
     public class DTO_DatosCuenta
     {
