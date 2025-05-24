@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Sistema_RRHH_Nexora.Models.Empleados>
+﻿@model IEnumerable<Sistema_RRHH_Nexora.Models.DTO_ListaEmpleados>
 
 @{
 	ViewData["Title"] = "Index";
@@ -8,18 +8,24 @@
 	<table class="tabla-nexora">
 		<thead>
 			<tr>
-				<th>@Html.DisplayNameFor(model => model.NombreEmpleado)</th>
-				<th>@Html.DisplayNameFor(model => model.Cedula)</th>
-				<th>@Html.DisplayNameFor(model => model.Pais)</th>
+				<th>@Html.DisplayNameFor(model => model.lista.ID_Empleado)</th>
+				<th>@Html.DisplayNameFor(model => model.lista.NombreEmpleado)</th>
+				<th>@Html.DisplayNameFor(model => model.lista.Cedula)</th>
+				<th>@Html.DisplayNameFor(model => model.lista.Pais)</th>
+				<th>@Html.DisplayNameFor(model => model.correoEmp)</th>
+				<th>@Html.DisplayNameFor(model => model.idPerfil)</th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach (var item in Model)
 			{
 				<tr>
-					<td>@Html.DisplayFor(modelItem => item.NombreEmpleado)</td>
-					<td>@Html.DisplayFor(modelItem => item.Cedula)</td>
-					<td>@Html.DisplayFor(modelItem => item.Pais)</td>
+					<td>@Html.DisplayFor(modelItem => item.lista.ID_Empleado)</td>
+					<td>@Html.DisplayFor(modelItem => item.lista.NombreEmpleado)</td>
+					<td>@Html.DisplayFor(modelItem => item.lista.Cedula)</td>
+					<td>@Html.DisplayFor(modelItem => item.lista.Pais)</td>
+					<td>@Html.DisplayFor(modelItem => item.correoEmp)</td>
+					<td>@Html.DisplayFor(modelItem => item.idPerfil)</td>
 				</tr>
 			}
 		</tbody>

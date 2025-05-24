@@ -27,7 +27,7 @@ namespace Sistema_RRHH_Nexora.Controllers
             {
                 if (User.IsInRole("RRHH"))
                 {
-                    List<Empleados> lista = new List<Empleados>();
+                    List<DTO_ListaEmpleados> lista = new List<DTO_ListaEmpleados>();
 
                     var response = await client.GetAsync("/api/Empleados/Listado");
 
@@ -35,7 +35,7 @@ namespace Sistema_RRHH_Nexora.Controllers
                     {
                         var resultado = await response.Content.ReadAsStringAsync();
 
-                        lista = JsonConvert.DeserializeObject<List<Empleados>>(resultado);
+                        lista = JsonConvert.DeserializeObject<List<DTO_ListaEmpleados>>(resultado);
 
                         return View(lista);
 

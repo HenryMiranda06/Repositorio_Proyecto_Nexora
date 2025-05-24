@@ -139,32 +139,6 @@
   },
   {
     "ContainingType": "API_NEXORA_INGSW.Controllers.CuentasController",
-    "Method": "SolicitudCrearCuenta",
-    "RelativePath": "api/Cuentas/SolicitarCuenta",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "solicitud",
-        "Type": "API_NEXORA_INGSW.Models.SolicitudesCuenta",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "API_NEXORA_INGSW.Controllers.CuentasController",
     "Method": "VerificarCredenciales",
     "RelativePath": "api/Cuentas/VerificarCuenta",
     "HttpMethod": "PUT",
@@ -330,7 +304,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[API_NEXORA_INGSW.Models.Empleados, API_NEXORA_INGSW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[API_NEXORA_INGSW.Models.DTO_ListaEmpleados, API_NEXORA_INGSW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -44,7 +44,7 @@ namespace API_NEXORA_INGSW.Controllers
                     _context.Empleados.Add(empleado);
 
                     //agregar el puesto de trabajo
-                    _context.RolesEmpleado.Add(new RolesEmpleado { ID_Empleado = empleado.ID_Empleado, ID_Rol = id});
+                    _context.RolesEmpleado.Add(new RolesEmpleado { ID_Empleado = empleado.ID_Empleado, ID_Rol = id });
 
                     await _context.SaveChangesAsync();
 
@@ -65,12 +65,27 @@ namespace API_NEXORA_INGSW.Controllers
         }
 
         [HttpGet("Listado")]
-        public async Task<List<Empleados>> Listado()
+        public async Task<List<DTO_ListaEmpleados>> Listado()
         {
             //se lee la lista de empleados en la base datos
             var lista = await _context.Empleados.ToListAsync();
 
-            return lista; //se retorna la lista de empleados
+            List<DTO_ListaEmpleados> dtoLista = new List<DTO_ListaEmpleados>();
+
+            foreach (var datos in lista)
+            {
+                var cuenta = await _context.Cuentas.FirstOrDefaultAsync(c => c.ID_Empleado == datos.ID_Empleado);
+                var perfil = await _context.PerfilProfesional.FirstOrDefaultAsync(p => p.ID_Empleado == datos.ID_Empleado);
+
+                dtoLista.Add(new DTO_ListaEmpleados
+                {
+                    lista = datos,
+                    correoEmp = cuenta?.Correo ?? "No posee cuenta.",
+                    idPerfil = perfil.ID_Perfil
+                });
+            }
+
+            return dtoLista; //se retorna la lista de empleados
         }
 
         [HttpGet("Buscar/{cedula}")]

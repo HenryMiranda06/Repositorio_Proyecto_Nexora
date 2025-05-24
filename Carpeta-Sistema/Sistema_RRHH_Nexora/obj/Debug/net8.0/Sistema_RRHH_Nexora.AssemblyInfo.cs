@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema_RRHH_Nexora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9118e1555e90750c189d833e8a0d769a80b73801")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+499bb1b572b4903ec93a9f54915f240d53dd7b56")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema_RRHH_Nexora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema_RRHH_Nexora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
